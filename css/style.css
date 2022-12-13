@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -646,4 +647,596 @@ body {
 
 .guide .l-L16::after {
   content: "L16";
+}
+
+/*----------------------------------------
+
+ここからここからstyle.css に記載内容
+
+----------------------------------------*/
+body {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containter {
+  width: 100%;
+  height: 100%;
+}
+
+.contents {
+  width: 100%;
+  height: 100%;
+}
+
+.l-S01,
+.l-S02,
+.l-S03 {
+  position: relative;
+  height: 100%;
+}
+
+.l-S01 {
+  width: 100%;
+}
+
+.l-S02 {
+  width: 100%;
+  /* padding : 40px 0 ; */
+}
+
+.l-S03 .header {
+  width: calc(100% - 48px);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.l-L01,
+.l-L02,
+.l-L03,
+.l-L04,
+.l-L05,
+.l-L06,
+.l-L07,
+.l-L08,
+.l-L09,
+.l-L10,
+.l-L11,
+.l-L12,
+.l-L13,
+.l-L14,
+.l-L15,
+.l-L16 {
+  position: relative;
+  width: 100%;
+  min-height: 24px;
+}
+
+/*----------------------------------------
+
+header
+
+----------------------------------------*/
+.header {
+  position: absolute;
+  top: 22px;
+  left: 72px;
+  z-index: 10;
+}
+
+.s-mainVisual {
+  position: relative;
+  display: flex;
+  background-image: url(../img/top1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 802px;
+}
+
+.b-head_2 {
+  padding: 135px 0 0 89px;
+}
+
+.b-hiroImage img {
+  max-width: 960px;
+  height: auto;
+}
+
+/*----------------------------------------
+
+サービス(serviceVisual)
+
+----------------------------------------*/
+.b-serviceTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 2px #D1DEFF;
+  width: 160px;
+  height: 2px;
+  position: absolute;
+  top: 64%;
+  left: 74%;
+  z-index: 1;
+}
+
+.b-service .head_3 span {
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.b-serviceCard {
+  max-width: 600px;
+  background-color: #EFF7FF;
+  border-radius: 15px;
+}
+
+.b-serviceCard__1 {
+  margin-top: 200px;
+}
+
+.b-serviceCard__1 img {
+  max-width: 321px;
+  height: auto;
+}
+
+.b-serviceCard .head_3 {
+  padding-top: 66px;
+  text-align: center;
+}
+
+.b-serviceCard .subText {
+  padding: 22px 60px 113px;
+}
+
+.s-serviceVisual .imageBox {
+  text-align: right;
+}
+
+.s-serviceVisual img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*----------------------------------------
+
+選ばれる５つの理由(serviceCard)
+
+----------------------------------------*/
+.b-subTitle {
+  color: #3A7CE5;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.b-serviceCard__1 {
+  position: relative;
+}
+
+.b-serviceCard__1 .subTitle {
+  color: #3A7CE5;
+  margin-top: 8px;
+}
+
+.b-serviceCard__1 .imageBox {
+  position: absolute;
+  top: -130px;
+}
+
+.b-serviceCard__2 {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+}
+
+.b-serviceCard__2 img {
+  max-width: 264px;
+  height: auto;
+}
+
+.b-serviceCard__2 .subText {
+  max-width: 560px;
+  height: auto;
+  margin-right: 32px;
+  padding-top: 64px;
+}
+
+ul {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+li {
+  border-bottom: 1px solid #C6E3F3;
+  list-style: none;
+}
+
+.s-reasonVisual .b-subText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 60;
+  color: #C4E5F9;
+  padding-right: 32px;
+}
+
+/* li:not(:last-child) {
+} */
+/*----------------------------------------
+
+font-size
+
+----------------------------------------*/
+h1 {
+  font-size: 40px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-size: 74px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+}
+
+.b-head_sub {
+  font-size: 53px;
+  line-height: 1.5;
+  letter-spacing: 0em;
+}
+
+h3 {
+  font-size: 50px;
+  letter-spacing: 0.15em;
+}
+
+h4, li {
+  font-size: 42px;
+}
+
+.subText {
+  font-size: 16px;
+  line-height: 3;
+  letter-spacing: 0.02em;
+}
+
+.subTitle {
+  font-size: 24px;
+}
+
+/*----------------------------------------
+
+row
+
+----------------------------------------*/
+.row {
+  font-size: 73px;
+}
+
+/*----------------------------------------
+
+わたしたちが選ばれる５つの理由
+
+----------------------------------------*/
+.b-subText {
+  font-size: 60px;
+}
+
+.s-reasonVisual .l-L02 {
+  padding-left: 72px;
+}
+
+.s-reasonVisual .b-headTitle {
+  padding-bottom: 32px;
+}
+
+.s-reasonVisual ul {
+  padding-top: 32px;
+}
+
+.s-reasonVisual .l-L04 {
+  max-width: 894px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.s-reasonVisual .l-L07 {
+  display: inline-block;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+}
+
+ol li {
+  list-style: none;
+}
+
+/*----------------------------------------
+
+わたしたちのチーム
+
+----------------------------------------*/
+.b-teamTitle .subText {
+  max-width: 823px;
+}
+
+.b-teamTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 9px #D1DEFF;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 29%;
+  left: 17%;
+  z-index: 1;
+}
+
+.b-teamAbout {
+  display: flex;
+}
+
+.b-teamAbout .head_4 {
+  max-width: 608px;
+}
+
+.b-teamAbout .subText {
+  max-width: 440px;
+}
+
+.b-teamAbout img {
+  width: 372px;
+  height: auto;
+}
+
+/*----------------------------------------
+
+SLashのクリエイターが制作したサイト
+
+----------------------------------------*/
+.b-teamTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 9px #D1DEFF;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 29%;
+  left: 17%;
+  z-index: 1;
+}
+
+.box {
+  width: 400px;
+  height: 247px;
+  background-color: #D9D9D9;
+}
+
+.b-productsCard .title {
+  width: 400px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.b-productsCard .text {
+  width: 400px;
+  padding-top: 32px;
+}
+
+/*----------------------------------------
+
+価格もクオリティも…
+
+----------------------------------------*/
+.b-teamTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 2px #C5D7F9;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 56%;
+  left: 25%;
+  z-index: 1;
+}
+
+.b-lastTitle {
+  max-width: 794px;
+}
+
+.b-lastTitle .subText {
+  max-width: 640px;
+}
+
+.b-lastTitle .subText:last-child {
+  padding-top: 32px;
+}
+
+/*----------------------------------------
+
+わたしたちチームの紹介
+
+----------------------------------------*/
+.s-teamVisual .b-teamTitle {
+  max-width: 823px;
+}
+
+.s-teamVisual .b-teamBox {
+  display: flex;
+}
+
+.s-teamVisual img {
+  max-width: 469px;
+  height: auto;
+}
+
+/*----------------------------------------
+
+SLashのクリエイターが制作したサイト
+
+----------------------------------------*/
+.s-productVisual .l-L04 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* justify-content: space-between; */
+  max-width: 1300px;
+}
+
+.s-productVisual .b-productsCard {
+  width: 33.3333333333%;
+}
+
+/*----------------------------------------
+
+価格もクオリティも満足できる Webサイト制作サービス
+
+----------------------------------------*/
+.s-productsVisual .l-L04 {
+  display: flex;
+}
+
+/*----------------------------------------
+
+ここからここからlayout.css に記載内容
+
+----------------------------------------*/
+/*----------------------------------------
+
+ヘッダー
+
+----------------------------------------*/
+/*----------------------------------------
+
+mainVisual
+
+----------------------------------------*/
+/*----------------------------------------
+
+サービス
+
+----------------------------------------*/
+.s-serviceVisual .l-L02::before {
+  content: "SERVICE";
+  font-size: 128px;
+  font-weight: bold;
+  color: #E2F4FC;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.s-serviceVisual .l-L01 {
+  padding-right: 72px;
+}
+
+.s-serviceVisual .l-L02 {
+  max-width: 650px;
+  margin-left: auto;
+}
+
+.s-serviceVisual .l-L03 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1298px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-L05 {
+  padding-top: 200px;
+}
+
+/*----------------------------------------
+
+わたしたちが選ばれる５つの理由
+
+----------------------------------------*/
+.s-serviceVisual .l-S03 {
+  background-color: #FAFAFA;
+}
+
+.s-reasonVisual .l-L02::before {
+  content: "REASON";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #E2F4FC;
+}
+
+.s-reasonVisual .l-L02 {
+  background-color: #FAFAFA;
+  padding-left: 96px;
+}
+
+.s-reasonVisual .l-L03 {
+  background-color: #FAFAFA;
+}
+
+/*----------------------------------------
+
+サービス
+
+----------------------------------------*/
+.s-teamVisual .l-L02::before {
+  content: "TEAMS";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #E2F4FC;
+}
+
+.s-teamVisual .l-L02 {
+  padding-left: 72px;
+}
+
+/*----------------------------------------
+
+わたしたちチームの紹介
+
+----------------------------------------*/
+.s-productVisual .l-L02 {
+  padding-left: 72px;
+}
+
+.s-teamVisual .l-L03 {
+  max-width: 909px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+/*----------------------------------------
+
+SLash作品
+
+----------------------------------------*/
+.s-productVisual .l-L02::before {
+  content: "PRODACTS";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #E2F4FC;
+}
+
+/*----------------------------------------
+
+価格もクオリティも満足できるWebサイト制作サービス
+
+----------------------------------------*/
+.s-productsVisual .subText_1 {
+  max-width: 610px;
+}
+
+.s-productsVisual .subText_2 {
+  max-width: 640px;
 }
