@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+body{
+	--main   : #ffffff ;
+	--sub    : #EFF7FF ;
+	--accent : #4EADE4;
+	--text   : #333 ;
+	--subtext   : #3A7CE5;
+	background : var(--main);
+	color : #333 ;
+}
+// color : var(--text) ;
+// background : var(--accent);
