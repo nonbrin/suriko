@@ -75,19 +75,10 @@ header
   z-index: 10;
 }
 
-.s-mainVisual {
-  position: relative;
-  display: flex;
-  background-image: url(../img/top1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 802px;
-}
 
 
 .b-head_2 {
-  padding: 135px 0 0 89px;
+  margin: 135px 0 0 89px;
   
 }
 
@@ -103,132 +94,10 @@ header
 
 ----------------------------------------*/
 
-.b-serviceTitle .head_3::before {
-  content: "";
-  display: block;
-  border-top: solid 2px #D1DEFF;
-  width: 160px;
-  height: 2px;
-  position: absolute;
-  top: 64%;
-  left: 74%;
-  z-index: 1;
-}
-
-.b-service .head_3 span {
-  background: #fff;
-  padding: 0 20px;
-  position: relative;
-  z-index: 5;
-}
-
-
-.b-serviceCard {
-  max-width: 600px;
-  background-color: #EFF7FF;
-  border-radius: 15px;
-}
-
-.b-serviceCard__1 {
-  margin-top: 200px;
-}
-
-.b-serviceCard__1 img {
-  max-width: 321px;
-  height: auto;
-}
-
-.b-serviceCard .head_3  {
-  padding-top: 66px;
-  text-align: center;
-}
-
-.b-serviceCard .subText  {
-  padding: 22px 60px 113px;
-  
-}
-
-.s-serviceVisual .imageBox {
-  text-align: right;
-}
-
-.s-serviceVisual img {
-  max-width: 100%;
-  height: auto;
-}
 
 
 
 
-
-/*----------------------------------------
-
-選ばれる５つの理由(serviceCard)
-
-----------------------------------------*/
-
-.b-subTitle {
-  color: #3A7CE5;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-
-.b-serviceCard__1 {
-  position: relative;
-}
-
-.b-serviceCard__1 .subTitle {
-  color: #3A7CE5;
-  margin-top: 8px;
-}
-
-.b-serviceCard__1 .imageBox {
-  position: absolute;
-  top: -130px;
-}
-
-.b-serviceCard__2 {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-}
-
-.b-serviceCard__2 img {
-  max-width: 264px;
-  height: auto;
-}
-
-.b-serviceCard__2 .subText {
-  max-width: 560px;
-  height: auto;
-  margin-right: 32px;
-  padding-top: 64px;
-}
-
-
-
-ul {
-  max-width: 880px;
-  margin: 0 auto;
-}
-
-li {
-  border-bottom: 1px solid #C6E3F3;
-  list-style: none;
-}
-
-.s-reasonVisual .b-subText {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 60;
-  color: #C4E5F9;
-  padding-right: 32px;
-}
-
-
-
-/* li:not(:last-child) {
-} */
 
 
 
@@ -251,6 +120,7 @@ h2 {
   font-size: 74px;
   line-height: 1.6;
   letter-spacing: 0em;
+  font-weight: bold;
 }
 
 .b-head_sub {
@@ -262,6 +132,7 @@ h2 {
 h3 {
   font-size: 50px;
   letter-spacing: 0.15em;
+  font-weight: bold;
 }
 
 h4 , li{
@@ -459,7 +330,7 @@ SLashのクリエイターが制作したサイト
 SLashのクリエイターが制作したサイト
 
 ----------------------------------------*/
-.s-productVisual .l-L04  {
+.s-productsVisual .l-L04  {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -467,7 +338,7 @@ SLashのクリエイターが制作したサイト
   max-width: 1300px;
 }
 
-.s-productVisual .b-productsCard {
+.s-productsVisual .b-productsCard {
   width: calc(100%/3);
 }
 

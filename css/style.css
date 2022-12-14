@@ -362,293 +362,6 @@ body {
   color: #333;
 }
 
-.guide .l-S01::before,
-.guide .l-S02::before,
-.guide .l-S03::before {
-  content: "";
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-style: dashed;
-  border-width: 1px;
-}
-
-.guide .l-S01::before {
-  border-color: #000;
-}
-
-.guide .l-S02::before {
-  border-color: #555;
-}
-
-.guide .l-S03::before {
-  border-color: #aaa;
-}
-
-.guide .l-S01::after,
-.guide .l-S02::after,
-.guide .l-S03::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 101;
-  width: 48px;
-  height: 16px;
-  font-size: 11px;
-}
-
-.guide .l-S01::after {
-  content: "S01";
-  top: 0;
-  right: 0;
-  color: #000;
-  background: #000;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.guide .l-S02::after {
-  content: "S02";
-  top: 0;
-  right: 48px;
-  color: #555;
-  background: rgba(80, 80, 80, 0.4);
-}
-
-.guide .l-S03::after {
-  content: "S03";
-  top: 0;
-  right: 0;
-  color: #777;
-  background: rgba(160, 160, 160, 0.4);
-}
-
-.guide .l-L01::before,
-.guide .l-L02::before,
-.guide .l-L03::before,
-.guide .l-L04::before,
-.guide .l-L05::before,
-.guide .l-L06::before,
-.guide .l-L07::before,
-.guide .l-L08::before,
-.guide .l-L09::before,
-.guide .l-L10::before,
-.guide .l-L11::before,
-.guide .l-L12::before,
-.guide .l-L13::before,
-.guide .l-L14::before,
-.guide .l-L15::before,
-.guide .l-L16::before {
-  content: "";
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-style: dashed;
-  border-width: 1px;
-}
-
-.guide .l-L01::before,
-.guide .l-L09::before {
-  background: rgba(230, 0, 10, 0.2);
-  border-color: #E9000C;
-}
-
-.guide .l-L02::before,
-.guide .l-L10::before {
-  background: rgba(30, 240, 255, 0.2);
-  border-color: #1CEFFF;
-}
-
-.guide .l-L03::before,
-.guide .l-L11::before {
-  background: rgba(120, 0, 230, 0.1);
-  border-color: #A140FF;
-}
-
-.guide .l-L04::before,
-.guide .l-L12::before {
-  background: rgba(230, 230, 0, 0.2);
-  border-color: #E6E900;
-}
-
-.guide .l-L05::before,
-.guide .l-L13::before {
-  background: rgba(255, 30, 245, 0.2);
-  border-color: #FF1CF5;
-}
-
-.guide .l-L06::before,
-.guide .l-L14::before {
-  background: rgba(0, 210, 60, 0.2);
-  border-color: #00D43E;
-}
-
-.guide .l-L07::before,
-.guide .l-L15::before {
-  background: rgba(30, 0, 230, 0.2);
-  border-color: #1F00E9;
-}
-
-.guide .l-L08::before,
-.guide .l-L16::before {
-  background: rgba(250, 140, 0, 0.2);
-  border-color: #F78A00;
-}
-
-.guide .l-L01::after,
-.guide .l-L02::after,
-.guide .l-L03::after,
-.guide .l-L04::after,
-.guide .l-L05::after,
-.guide .l-L06::after,
-.guide .l-L07::after,
-.guide .l-L08::after,
-.guide .l-L09::after,
-.guide .l-L10::after,
-.guide .l-L11::after,
-.guide .l-L12::after,
-.guide .l-L13::after,
-.guide .l-L14::after,
-.guide .l-L15::after,
-.guide .l-L16::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  z-index: 101;
-  width: 40px;
-  height: 16px;
-  font-size: 10px;
-  color: #FFF;
-}
-
-.guide .l-L01::after,
-.guide .l-L09::after {
-  right: 0;
-  color: #E9000C;
-  background: rgba(230, 0, 10, 0.2);
-}
-
-.guide .l-L02::after,
-.guide .l-L10::after {
-  right: 40px;
-  color: #1CEFFF;
-  background: rgba(30, 240, 255, 0.2);
-}
-
-.guide .l-L03::after,
-.guide .l-L11::after {
-  right: 80px;
-  color: #A140FF;
-  background: rgba(120, 0, 230, 0.1);
-}
-
-.guide .l-L04::after,
-.guide .l-L12::after {
-  right: 120px;
-  color: #E6E900;
-  background: rgba(230, 230, 0, 0.2);
-}
-
-.guide .l-L05::after,
-.guide .l-L13::after {
-  right: 0;
-  color: #FF1CF5;
-  background: rgba(255, 30, 245, 0.2);
-}
-
-.guide .l-L06::after,
-.guide .l-L14::after {
-  right: 40px;
-  color: #00D43E;
-  background: rgba(0, 210, 60, 0.2);
-}
-
-.guide .l-L07::after,
-.guide .l-L15::after {
-  right: 80px;
-  color: #1F00E9;
-  background: rgba(30, 0, 230, 0.2);
-}
-
-.guide .l-L08::after,
-.guide .l-L16::after {
-  right: 120px;
-  color: #F78A00;
-  background: rgba(250, 140, 0, 0.2);
-}
-
-.guide .l-L01::after {
-  content: "L01";
-}
-
-.guide .l-L02::after {
-  content: "L02";
-}
-
-.guide .l-L03::after {
-  content: "L03";
-}
-
-.guide .l-L04::after {
-  content: "L04";
-}
-
-.guide .l-L05::after {
-  content: "L05";
-}
-
-.guide .l-L06::after {
-  content: "L06";
-}
-
-.guide .l-L07::after {
-  content: "L07";
-}
-
-.guide .l-L08::after {
-  content: "L08";
-}
-
-.guide .l-L09::after {
-  content: "L09";
-}
-
-.guide .l-L10::after {
-  content: "L10";
-}
-
-.guide .l-L11::after {
-  content: "L11";
-}
-
-.guide .l-L12::after {
-  content: "L12";
-}
-
-.guide .l-L13::after {
-  content: "L13";
-}
-
-.guide .l-L14::after {
-  content: "L14";
-}
-
-.guide .l-L15::after {
-  content: "L15";
-}
-
-.guide .l-L16::after {
-  content: "L16";
-}
-
 /*----------------------------------------
 
 ここからここからstyle.css に記載内容
@@ -733,18 +446,8 @@ header
   z-index: 10;
 }
 
-.s-mainVisual {
-  position: relative;
-  display: flex;
-  background-image: url(../img/top1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 802px;
-}
-
 .b-head_2 {
-  padding: 135px 0 0 89px;
+  margin: 135px 0 0 89px;
 }
 
 .b-hiroImage img {
@@ -757,120 +460,6 @@ header
 サービス(serviceVisual)
 
 ----------------------------------------*/
-.b-serviceTitle .head_3::before {
-  content: "";
-  display: block;
-  border-top: solid 2px #D1DEFF;
-  width: 160px;
-  height: 2px;
-  position: absolute;
-  top: 64%;
-  left: 74%;
-  z-index: 1;
-}
-
-.b-service .head_3 span {
-  background: #fff;
-  padding: 0 20px;
-  position: relative;
-  z-index: 5;
-}
-
-.b-serviceCard {
-  max-width: 600px;
-  background-color: #EFF7FF;
-  border-radius: 15px;
-}
-
-.b-serviceCard__1 {
-  margin-top: 200px;
-}
-
-.b-serviceCard__1 img {
-  max-width: 321px;
-  height: auto;
-}
-
-.b-serviceCard .head_3 {
-  padding-top: 66px;
-  text-align: center;
-}
-
-.b-serviceCard .subText {
-  padding: 22px 60px 113px;
-}
-
-.s-serviceVisual .imageBox {
-  text-align: right;
-}
-
-.s-serviceVisual img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*----------------------------------------
-
-選ばれる５つの理由(serviceCard)
-
-----------------------------------------*/
-.b-subTitle {
-  color: #3A7CE5;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.b-serviceCard__1 {
-  position: relative;
-}
-
-.b-serviceCard__1 .subTitle {
-  color: #3A7CE5;
-  margin-top: 8px;
-}
-
-.b-serviceCard__1 .imageBox {
-  position: absolute;
-  top: -130px;
-}
-
-.b-serviceCard__2 {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-}
-
-.b-serviceCard__2 img {
-  max-width: 264px;
-  height: auto;
-}
-
-.b-serviceCard__2 .subText {
-  max-width: 560px;
-  height: auto;
-  margin-right: 32px;
-  padding-top: 64px;
-}
-
-ul {
-  max-width: 880px;
-  margin: 0 auto;
-}
-
-li {
-  border-bottom: 1px solid #C6E3F3;
-  list-style: none;
-}
-
-.s-reasonVisual .b-subText {
-  font-family: "Roboto", sans-serif;
-  font-weight: 60;
-  color: #C4E5F9;
-  padding-right: 32px;
-}
-
-/* li:not(:last-child) {
-} */
 /*----------------------------------------
 
 font-size
@@ -886,6 +475,7 @@ h2 {
   font-size: 74px;
   line-height: 1.6;
   letter-spacing: 0em;
+  font-weight: bold;
 }
 
 .b-head_sub {
@@ -897,6 +487,7 @@ h2 {
 h3 {
   font-size: 50px;
   letter-spacing: 0.15em;
+  font-weight: bold;
 }
 
 h4, li {
@@ -1086,7 +677,7 @@ SLashのクリエイターが制作したサイト
 SLashのクリエイターが制作したサイト
 
 ----------------------------------------*/
-.s-productVisual .l-L04 {
+.s-productsVisual .l-L04 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1094,7 +685,7 @@ SLashのクリエイターが制作したサイト
   max-width: 1300px;
 }
 
-.s-productVisual .b-productsCard {
+.s-productsVisual .b-productsCard {
   width: 33.3333333333%;
 }
 
@@ -1239,4 +830,116 @@ SLash作品
 
 .s-productsVisual .subText_2 {
   max-width: 640px;
+}
+
+.s-mainVisual {
+  position: relative;
+  display: flex;
+  background-image: url(../img/main_bg_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 802px;
+}
+
+.b-subTitle {
+  color: #3A7CE5;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.b-serviceCard__1 {
+  position: relative;
+}
+
+.b-serviceCard__1 .subTitle {
+  color: #3A7CE5;
+  margin-top: 8px;
+}
+
+.b-serviceCard__1 .imageBox {
+  position: absolute;
+  top: -130px;
+}
+
+.b-serviceCard__2 {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+}
+
+.b-serviceCard__2 img {
+  max-width: 264px;
+  height: auto;
+}
+
+.b-serviceCard__2 .subText {
+  max-width: 560px;
+  height: auto;
+  margin-right: 32px;
+  padding-top: 64px;
+}
+
+ul {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+li {
+  border-bottom: 1px solid #C6E3F3;
+  list-style: none;
+}
+
+.s-reasonVisual .b-subText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 60;
+  color: #C4E5F9;
+  padding-right: 32px;
+}
+
+.b-serviceTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 2px #D1DEFF;
+  width: 160px;
+  height: 2px;
+  position: absolute;
+  top: 59%;
+  left: 74%;
+  z-index: 1;
+}
+
+.b-service .head_3 span {
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.b-serviceCard {
+  max-width: 600px;
+  background-color: #EFF7FF;
+  border-radius: 15px;
+}
+
+.b-serviceCard__1 {
+  margin-top: 200px;
+}
+
+.b-serviceCard__1 img {
+  max-width: 321px;
+  height: auto;
+}
+
+.b-serviceCard .head_3 {
+  padding-top: 66px;
+  text-align: center;
+}
+
+.b-serviceCard .subText {
+  padding: 22px 60px 113px;
+}
+
+.s-serviceVisual .imageBox {
+  text-align: right;
 }

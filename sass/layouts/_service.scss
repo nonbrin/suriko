@@ -1,0 +1,51 @@
+
+.b-serviceTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 2px #D1DEFF;
+  width: 160px;
+  height: 2px;
+  position: absolute;
+  top: 59%;
+  left: 74%;
+  z-index: 1;
+}
+
+.b-service .head_3 span {
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+
+.b-serviceCard {
+  max-width: 600px;
+  background-color: #EFF7FF;
+  border-radius: 15px;
+}
+
+.b-serviceCard__1 {
+  margin-top: 200px;
+}
+
+.b-serviceCard__1 img {
+  max-width: 321px;
+  height: auto;
+}
+
+.b-serviceCard .head_3  {
+  padding-top: 66px;
+  text-align: center;
+}
+
+.b-serviceCard .subText  {
+  padding: 22px 60px 113px;
+  
+}
+
+.s-serviceVisual .imageBox {
+  text-align: right;
+}
+
+

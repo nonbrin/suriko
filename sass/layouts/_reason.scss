@@ -1,0 +1,57 @@
+.b-subTitle {
+  color: #3A7CE5;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.b-serviceCard__1 {
+  position: relative;
+}
+
+.b-serviceCard__1 .subTitle {
+  color: #3A7CE5;
+  margin-top: 8px;
+}
+
+.b-serviceCard__1 .imageBox {
+  position: absolute;
+  top: -130px;
+}
+
+.b-serviceCard__2 {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+}
+
+.b-serviceCard__2 img {
+  max-width: 264px;
+  height: auto;
+}
+
+.b-serviceCard__2 .subText {
+  max-width: 560px;
+  height: auto;
+  margin-right: 32px;
+  padding-top: 64px;
+}
+
+
+
+ul {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+li {
+  border-bottom: 1px solid #C6E3F3;
+  list-style: none;
+}
+
+.s-reasonVisual .b-subText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 60;
+  color: #C4E5F9;
+  padding-right: 32px;
+}
