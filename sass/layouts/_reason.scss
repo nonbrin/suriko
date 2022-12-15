@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .b-subTitle {
   color: #3A7CE5;
   font-size: 24px;
@@ -55,3 +56,21 @@ li {
   color: #C4E5F9;
   padding-right: 32px;
 }
+
+.s-serviceVisual .l-S03 {
+  background-color: #FAFAFA;
+}
+
+.s-reasonVisual .l-L02::before {
+  content: "REASON";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #E2F4FC;
+}
+
+.s-reasonVisual .l-L02 {
+  background-color: #FAFAFA;
+  padding-left: 96px;
+}
+

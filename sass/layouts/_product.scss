@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.b-teamTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 9px #D1DEFF;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 29%;
+  left: 17%;
+  z-index: 1;
+}
+
+.box {
+  width: 400px;
+  height: 247px;
+  background-color: #D9D9D9;
+}
+
+
+.b-productsCard .title {
+  width: 400px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.b-productsCard .text {
+  width: 400px;
+  padding-top: 32px;
+} 
+
+
+
+
+
+.s-productsVisual .l-L02 {
+  padding-left: 72px;
+}
+
+.s-productsVisual .l-L02::before {
+  content: "PRODUCTS";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #E2F4FC;
+}
+
+.b-productsTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 2px #C5D7F9;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 84%;
+  left: 40%;
+  z-index: 1;
+}
+
+.s-productsVisual .l-L04  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  max-width: 1300px;
+  margin: auto;
+}
+
+.b-productsCard {
+  padding-bottom: 96px;
+}
+
+.b-productsTitle {
+  margin-bottom: 200px;
+}
+
+
+/*----------------------------------------
+
+価格もクオリティも満足できる Webサイト制作サービス
+
+----------------------------------------*/
+.s-productsVisual .l-L04 {
+  display: flex;
+}
+
+
+.s-productsVisual .b-lastTitle {
+  margin: auto;
+}
+
+.s-productsVisual .l-L06 {
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+}
+
+.s-productsVisual img {
+  max-width: 254px;
+}
+
+.lastText {
+  max-width: 640px;
+}
+
+.subText_2 {
+  margin-top: 32px;
+}
+
+.s-productsVisual .b-lastTitle {
+  max-width: 986px;
+  margin: auto;
+}
+
+.b-lastTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 2px #C5D7F9;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 49%;
+  left: 62%;
+  z-index: 1;
+}

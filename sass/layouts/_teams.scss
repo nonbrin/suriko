@@ -1,0 +1,91 @@
+@charset "UTF-8";
+.s-teamVisual .l-L02::before {
+  content: "TEAMS";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #E2F4FC;
+}
+
+.s-teamVisual .l-L02 {
+  padding-left: 72px;
+}
+
+.s-teamVisual .l-L03 {
+  max-width: 909px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.b-teamTitle .subText {
+  max-width: 823px;
+}
+
+.b-teamTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 9px #D1DEFF;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 29%;
+  left: 17%;
+  z-index: 1;
+}
+
+
+.b-teamAbout {
+  display: flex;
+}
+.b-teamAbout .head_4 {
+  max-width: 608px;
+}
+
+.b-teamAbout .subText {
+  max-width: 440px;
+}
+
+.b-teamAbout img {
+  width: 372px;
+  height: auto;
+}
+
+
+.b-teamTitle .head_3::before {
+  content: "";
+  display: block;
+  border-top: solid 2px #C5D7F9;
+  width: 160px;
+  height: 1px;
+  position: absolute;
+  top: 56%;
+  left: 25%;
+  z-index: 1;
+}
+
+.b-lastTitle {
+  max-width: 794px;
+}
+
+.b-lastTitle .subText {
+  max-width: 640px;
+}
+
+.b-lastTitle .subText:last-child {
+  padding-top: 32px;
+}
+
+
+.s-teamVisual .b-teamTitle {
+  max-width: 823px;
+} 
+
+.s-teamVisual .b-teamBox {
+  display: flex;
+}
+
+.s-teamVisual img {
+  max-width: 469px;
+  height: auto;
+}

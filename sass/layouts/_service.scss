@@ -1,3 +1,39 @@
+@charset "UTF-8";
+.b-subText {
+  font-size: 60px;
+}
+
+.s-reasonVisual .l-L02 {
+  padding-left: 72px;
+}
+
+.s-reasonVisual .b-headTitle {
+  padding-bottom: 32px;
+}
+
+.s-reasonVisual ul {
+  padding-top: 32px;
+}
+
+.s-reasonVisual .l-L04 {
+  max-width: 894px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.s-reasonVisual .l-L07 {
+  display: inline-block;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+}
+
+ol li {
+  list-style: none;
+}
 
 .b-serviceTitle .head_3::before {
   content: "";
@@ -29,10 +65,7 @@
   margin-top: 200px;
 }
 
-.b-serviceCard__1 img {
-  max-width: 321px;
-  height: auto;
-}
+
 
 .b-serviceCard .head_3  {
   padding-top: 66px;
@@ -41,11 +74,38 @@
 
 .b-serviceCard .subText  {
   padding: 22px 60px 113px;
-  
 }
 
 .s-serviceVisual .imageBox {
   text-align: right;
 }
 
+.s-serviceVisual .l-L02::before {
+  content: "SERVICE";
+  font-size: 128px;
+  font-weight: bold;
+  color: #E2F4FC;
+  font-family: 'M PLUS 1p', sans-serif;
+}
 
+.s-serviceVisual .l-L01 {
+  padding-right: 72px;
+}
+
+.s-serviceVisual .l-L02 {
+  max-width: 650px;
+  margin-left: auto;
+}
+
+
+.s-serviceVisual .l-L03 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1298px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.l-L05 {
+  padding-top: 200px;
+}
