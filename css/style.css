@@ -931,6 +931,8 @@ row
   color: #3A7CE5;
   font-size: 24px;
   font-weight: bold;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .b-serviceCard__1 {
@@ -965,14 +967,15 @@ row
   padding-top: 64px;
 }
 
-ul {
+.s-reasonVisual__text ul {
   max-width: 880px;
   margin: 0 auto;
 }
 
-li {
+.s-reasonVisual__text li {
   border-bottom: 1px solid #C6E3F3;
-  list-style: none;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .s-reasonVisual .b-subText {
@@ -999,20 +1002,12 @@ li {
   padding-left: 96px;
 }
 
-.b-subText {
-  font-size: 60px;
-}
-
 .s-reasonVisual .l-L02 {
   padding-left: 72px;
 }
 
 .s-reasonVisual .b-headTitle {
   padding-bottom: 32px;
-}
-
-.s-reasonVisual ul {
-  padding-top: 32px;
 }
 
 .s-reasonVisual .l-L04 {
@@ -1023,6 +1018,10 @@ li {
 
 .s-reasonVisual .l-L07 {
   display: inline-block;
+}
+
+.b-subText {
+  font-size: 60px;
 }
 
 ol {
