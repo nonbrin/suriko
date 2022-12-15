@@ -1,16 +1,10 @@
 @charset "UTF-8";
-.b-subText {
-  font-size: 60px;
-}
 
-
-ol {
-  display: flex;
-  justify-content: center;
-}
-
-ol li {
-  list-style: none;
+.s-serviceVisual .l-S03 {
+  background-image: url(/img/service_bg_01.png);
+  background-size: cover;
+  width: 469px;
+  height: 1019.45px;
 }
 
 .s-serviceVisual  {
@@ -27,6 +21,11 @@ ol li {
   top: 59%;
   left: 74%;
   z-index: 1;
+}
+
+
+.b-subText {
+  font-size: 60px;
 }
 
 .b-service .head_3 span {
