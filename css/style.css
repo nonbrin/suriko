@@ -986,7 +986,7 @@ row
 }
 
 .s-reasonVisual .l-L02 {
-  background-image: url(/img/bg_grey_top.png);
+  background-color: #FAFAFA;
   padding-left: 96px;
 }
 
@@ -1016,11 +1016,17 @@ row
   display: inline-block;
 }
 
-.s-serviceVisual .l-L02 {
-  background-image: url(/img/service_bg_01.png);
-  background-size: cover;
-  width: 469px;
-  height: 1019.45px;
+.b-subText {
+  font-size: 60px;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+}
+
+ol li {
+  list-style: none;
 }
 
 .s-serviceVisual {
@@ -1037,10 +1043,6 @@ row
   top: 59%;
   left: 74%;
   z-index: 1;
-}
-
-.b-subText {
-  font-size: 60px;
 }
 
 .b-service .head_3 span {
