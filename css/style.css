@@ -715,10 +715,6 @@ a {
   min-height: 24px;
 }
 
-.l-L05 {
-  padding-top: 200px;
-}
-
 .head_3 {
   font-size: 50px;
   letter-spacing: 0.15em;
@@ -800,15 +796,24 @@ row
   letter-spacing: 0em;
 }
 
+.s-mainVisual__box {
+  position: absolute;
+  z-index: 333;
+  right: 0;
+  top: 317px;
+  width: 960px;
+  height: 502.25px;
+}
+
 .b-teamTitle .head_3::before {
   content: "";
   display: block;
-  border-top: solid 9px #D1DEFF;
+  border-top: solid 2px #D1DEFF;
   width: 160px;
   height: 1px;
   position: absolute;
-  top: 29%;
-  left: 17%;
+  top: 20%;
+  left: 24%;
   z-index: 1;
 }
 
@@ -874,10 +879,6 @@ row
 価格もクオリティも満足できる Webサイト制作サービス
 
 ----------------------------------------*/
-.s-productsVisual .l-L04 {
-  display: flex;
-}
-
 .s-productsVisual .b-lastTitle {
   margin: auto;
 }
@@ -917,6 +918,44 @@ row
   z-index: 1;
 }
 
+.s-reasonVisual .l-S02 {
+  background-image: url(../img/bg_grey_top.png);
+  background-repeat: no-repeat;
+}
+
+.s-reasonVisual .l-L01 {
+  margin-top: 200px;
+  padding-left: 96px;
+}
+
+.s-reasonVisual .l-L01::before {
+  content: "REASON";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #E2F4FC;
+}
+
+.s-reasonVisual .l-L02 {
+  padding-left: 72px;
+  margin-bottom: 32px;
+}
+
+.s-reasonVisual .l-L03 {
+  padding-top: 32px;
+}
+
+.s-reasonVisual .l-L04 {
+  max-width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+}
+
+.s-reasonVisual .l-L05 {
+  display: flex;
+}
+
 .b-subTitle {
   color: #3A7CE5;
   font-size: 24px;
@@ -929,7 +968,7 @@ row
   position: relative;
 }
 
-.b-reasonCard__1 .subTitle {
+.b-reasonCard__01 .subTitle, .b-reasonCard__02 .subTitle, .b-reasonCard__03 .subTitle, .b-reasonCard__04 .subTitle, .b-reasonCard__05 .subTitle {
   color: #3A7CE5;
   margin-top: 8px;
 }
@@ -943,6 +982,8 @@ row
   display: flex;
   position: relative;
   align-items: flex-end;
+  letter-spacing: 0.2em;
+  line-height: 2;
 }
 
 .b-reasonCard__2 img {
@@ -954,7 +995,7 @@ row
   max-width: 560px;
   height: auto;
   margin-right: 32px;
-  padding-top: 64px;
+  padding-top: 62px;
 }
 
 .s-reasonVisual__text ul {
@@ -970,36 +1011,14 @@ row
 
 .s-reasonVisual .b-subText {
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 60px;
   color: #C4E5F9;
   padding-right: 32px;
 }
 
-.s-reasonVisual .l-L02 {
-  background-image: url(/img/bg_grey_top.png);
-  padding-left: 96px;
-}
-
-.s-reasonVisual .l-L02::before {
-  content: "REASON";
-  font-size: 128px;
-  font-weight: bold;
-  font-family: "M PLUS 1p", sans-serif;
-  color: #E2F4FC;
-}
-
-.s-reasonVisual .l-L02 {
-  padding-left: 72px;
-}
-
 .s-reasonVisual .b-headTitle {
   padding-bottom: 32px;
-}
-
-.s-reasonVisual .l-L04 {
-  max-width: 894px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .s-reasonVisual .l-L07 {
@@ -1013,11 +1032,80 @@ row
 .b-reasonCard__01::before {
   content: "01";
   position: absolute;
-  top: 0;
+  top: -166px;
   left: -20px;
   width: 100px;
   height: 100px;
-  font-size: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+.b-reasonCard__02 {
+  position: relative;
+}
+
+.b-reasonCard__02::before {
+  content: "02";
+  position: absolute;
+  top: -170px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+.b-reasonCard__03 {
+  position: relative;
+}
+
+.b-reasonCard__03::before {
+  content: "03";
+  position: absolute;
+  top: -170px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+.b-reasonCard__04 {
+  position: relative;
+}
+
+.b-reasonCard__04::before {
+  content: "04";
+  position: absolute;
+  top: -170px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+.b-reasonCard__05 {
+  position: relative;
+}
+
+.b-reasonCard__05::before {
+  content: "05";
+  position: absolute;
+  top: -158px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
   z-index: -100;
   color: #C4E5F9;
 }
@@ -1041,15 +1129,15 @@ row
   background-size: contain;
 }
 
+.s-serviceVisual__flex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .s-serviceVisual .l-L02 {
   max-width: 650px;
   margin-left: auto;
-}
-
-.b-serviceTitle .subText {
-  font-size: 16px;
-  line-height: 3;
-  letter-spacing: 0.02em;
+  margin-bottom: 120px;
 }
 
 .b-serviceTitle .head_3::before {
@@ -1064,24 +1152,23 @@ row
   z-index: 1;
 }
 
-.b-service .head_3 span {
-  background: #fff;
-  padding: 0 20px;
-  position: relative;
-  z-index: 5;
-}
-
-.s-serviceVisual__flex {
-  display: flex;
-  flex-direction: column-reverse;
+.b-serviceTitle .subText {
+  font-size: 16px;
+  line-height: 3;
+  letter-spacing: 0.02em;
 }
 
 .s-serviceVisual_svg {
   position: absolute;
   z-index: 333;
-  top: 0;
+  top: 184.04px;
+  left: 81px;
   width: 300px;
   height: 300px;
+}
+
+.b-serviceCard .l-L03 {
+  margin-top: 120px;
 }
 
 .b-serviceCard {
@@ -1090,12 +1177,7 @@ row
   border-radius: 15px;
 }
 
-.b-reasonCard__1 {
-  margin-top: 200px;
-}
-
 .b-serviceCard .head_3 {
-  padding-top: 66px;
   text-align: center;
 }
 
@@ -1107,16 +1189,16 @@ row
   text-align: right;
 }
 
+.s-serviceVisual .l-L01 {
+  padding-right: 72px;
+}
+
 .s-serviceVisual .l-L02::before {
   content: "SERVICE";
   font-size: 128px;
   font-weight: bold;
   color: #E2F4FC;
   font-family: "M PLUS 1p", sans-serif;
-}
-
-.s-serviceVisual .l-L01 {
-  padding-right: 72px;
 }
 
 .s-serviceVisual .l-L03 {
@@ -1127,16 +1209,69 @@ row
   margin-right: auto;
 }
 
-.s-teamVisual .l-L02::before {
+.s-serviceVisual .l-L04 {
+  padding-top: 66px;
+}
+
+.s-serviceVisual .l-L05 {
+  margin-top: 25px;
+}
+
+.s-serviceVisual .l-L06 {
+  position: relative;
+}
+
+.s-serviceVisual .l-L07 {
+  position: relative;
+}
+
+.s-seviceCard__01 {
+  position: absolute;
+  top: -365%;
+  right: 53%;
+}
+
+.s-seviceCard__02 {
+  position: absolute;
+  top: -456%;
+  right: 28%;
+}
+
+.b-serviceCard .subText {
+  letter-spacing: 0.2em;
+  line-height: 2;
+  padding-bottom: 200px;
+}
+
+.s-teamVisual .l-S02 {
+  position: relative;
+}
+
+.s-teamVisual .l-S02::before {
+  content: "";
+  position: absolute;
+  z-index: -100;
+  display: inline-block;
+  top: 108px;
+  right: 0;
+  width: 281px; /*画像の幅*/
+  height: 1085px; /*画像の高さ*/
+  background-image: url(../../img/teams_bg_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.s-teamVisual .l-L01 {
+  margin-top: 200px;
+  padding-left: 96px;
+}
+
+.s-teamVisual .l-L01::before {
   content: "TEAMS";
   font-size: 128px;
   font-weight: bold;
   font-family: "M PLUS 1p", sans-serif;
   color: #E2F4FC;
-}
-
-.s-teamVisual .l-L02 {
-  padding-left: 72px;
 }
 
 .s-teamVisual .l-L03 {
@@ -1146,49 +1281,18 @@ row
   margin-top: 200px;
 }
 
-.b-teamTitle .subText {
-  max-width: 823px;
-}
-
-.b-teamTitle .head_3::before {
-  content: "";
-  display: block;
-  border-top: solid 9px #D1DEFF;
-  width: 160px;
-  height: 1px;
-  position: absolute;
-  top: 29%;
-  left: 17%;
-  z-index: 1;
-}
-
-.b-teamAbout {
+.s-teamVisual .l-L04 {
   display: flex;
 }
 
-.b-teamAbout .head_4 {
-  max-width: 608px;
+.s-teamVisual .head_4 {
+  font-weight: bold;
 }
 
-.b-teamAbout .subText {
-  max-width: 440px;
-}
-
-.b-teamAbout img {
-  width: 372px;
-  height: auto;
-}
-
-.b-teamTitle .head_3::before {
-  content: "";
-  display: block;
-  border-top: solid 2px #C5D7F9;
-  width: 160px;
-  height: 1px;
-  position: absolute;
-  top: 56%;
-  left: 25%;
-  z-index: 1;
+.b-teamTitle .subText {
+  max-width: 700px;
+  line-height: 3;
+  letter-spacing: 0.02em;
 }
 
 .b-lastTitle {

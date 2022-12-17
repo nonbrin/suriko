@@ -3,12 +3,12 @@
 .b-teamTitle .head_3::before {
   content: "";
   display: block;
-  border-top: solid 9px #D1DEFF;
+  border-top: solid 2px #D1DEFF;
   width: 160px;
   height: 1px;
   position: absolute;
-  top: 29%;
-  left: 17%;
+  top: 20%;
+  left: 24%;
   z-index: 1;
 }
 
@@ -29,9 +29,6 @@
   width: 400px;
   padding-top: 32px;
 } 
-
-
-
 
 
 .s-productsVisual .l-L02 {
@@ -80,11 +77,6 @@
 価格もクオリティも満足できる Webサイト制作サービス
 
 ----------------------------------------*/
-.s-productsVisual .l-L04 {
-  display: flex;
-}
-
-
 .s-productsVisual .b-lastTitle {
   margin: auto;
 }

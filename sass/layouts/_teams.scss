@@ -1,14 +1,33 @@
 @charset "UTF-8";
-.s-teamVisual .l-L02::before {
+.s-teamVisual .l-S02 {
+  position: relative;
+}
+
+.s-teamVisual .l-S02::before{
+  content:'' ;    
+  position: absolute;
+  z-index: -100;
+  display: inline-block;
+  top: 108px;    
+  right: 0;
+  width: 281px;/*画像の幅*/
+  height: 1085px;/*画像の高さ*/
+  background-image: url(../../img/teams_bg_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.s-teamVisual .l-L01 {
+  margin-top: 200px;
+  padding-left: 96px;
+}
+
+.s-teamVisual .l-L01::before {
   content: "TEAMS";
   font-size: 128px;
   font-weight: bold;
   font-family: 'M PLUS 1p', sans-serif;
   color: #E2F4FC;
-}
-
-.s-teamVisual .l-L02 {
-  padding-left: 72px;
 }
 
 .s-teamVisual .l-L03 {
@@ -18,50 +37,18 @@
   margin-top: 200px;
 }
 
-.b-teamTitle .subText {
-  max-width: 823px;
-}
-
-.b-teamTitle .head_3::before {
-  content: "";
-  display: block;
-  border-top: solid 9px #D1DEFF;
-  width: 160px;
-  height: 1px;
-  position: absolute;
-  top: 29%;
-  left: 17%;
-  z-index: 1;
-}
-
-
-.b-teamAbout {
+.s-teamVisual .l-L04 {
   display: flex;
 }
-.b-teamAbout .head_4 {
-  max-width: 608px;
+
+.s-teamVisual .head_4 {
+  font-weight: bold;
 }
 
-.b-teamAbout .subText {
-  max-width: 440px;
-}
-
-.b-teamAbout img {
-  width: 372px;
-  height: auto;
-}
-
-
-.b-teamTitle .head_3::before {
-  content: "";
-  display: block;
-  border-top: solid 2px #C5D7F9;
-  width: 160px;
-  height: 1px;
-  position: absolute;
-  top: 56%;
-  left: 25%;
-  z-index: 1;
+.b-teamTitle .subText {
+  max-width: 700px;
+  line-height: 3;
+  letter-spacing: 0.02em;
 }
 
 .b-lastTitle {

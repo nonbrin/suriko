@@ -17,21 +17,17 @@
   background-image: url(../../img/service_bg_01.png);
   background-repeat: no-repeat;
   background-size: contain;
-
 }
+
+.s-serviceVisual__flex{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .s-serviceVisual .l-L02 {
   max-width: 650px;
   margin-left: auto;
-}
-
-// .b-serviceTitle .head_3 {
-  
-// }
-
-.b-serviceTitle .subText {
-  font-size: 16px;
-  line-height: 3;
-  letter-spacing: 0.02em;
+  margin-bottom: 120px;
 }
 
 .b-serviceTitle .head_3::before {
@@ -46,31 +42,25 @@
   z-index: 1;
 }
 
-.b-service .head_3 span {
-  background: #fff;
-  padding: 0 20px;
-  position: relative;
-  z-index: 5;
+.b-serviceTitle .subText {
+  font-size: 16px;
+  line-height: 3;
+  letter-spacing: 0.02em;
 }
+
 // SVGと背景追加
-.s-serviceVisual__flex{
-  display: flex;
-  flex-direction: column-reverse;
-}
 .s-serviceVisual_svg{
   position: absolute;
   z-index: 333;
-  top: 0;
+  top: 184.04px;
+  left: 81px;
   width: 300px;
   height: 300px;
 }
-// .s-serviceVisual_bg{
-//   position: absolute;
-//   z-index: 222;
-//   top: 0;
-//   width: 300px;
-//   height: 500px;
-// }
+
+.b-serviceCard .l-L03 {
+  margin-top: 120px;
+}
 
 .b-serviceCard {
   max-width: 600px;
@@ -78,14 +68,8 @@
   border-radius: 15px;
 }
 
-.b-reasonCard__1 {
-  margin-top: 200px;
-}
-
-
 
 .b-serviceCard .head_3  {
-  padding-top: 66px;
   text-align: center;
 }
 
@@ -97,6 +81,10 @@
   text-align: right;
 }
 
+.s-serviceVisual .l-L01 {
+  padding-right: 72px;
+}
+
 .s-serviceVisual .l-L02::before {
   content: "SERVICE";
   font-size: 128px;
@@ -105,12 +93,6 @@
   font-family: 'M PLUS 1p', sans-serif;
 }
 
-.s-serviceVisual .l-L01 {
-  padding-right: 72px;
-}
-
-
-
 
 .s-serviceVisual .l-L03 {
   display: flex;
@@ -118,5 +100,41 @@
   max-width: 1298px;
   margin-left: auto;
   margin-right: auto;
-  }
+}
+
+
+.s-serviceVisual .l-L04 {
+  padding-top: 66px;
+}
+
+.s-serviceVisual .l-L05 {
+  margin-top: 25px;
+}
+
+.s-serviceVisual .l-L06 {
+  position: relative;
+}
+
+.s-serviceVisual .l-L07 {
+  position: relative;
+}
+
+.s-seviceCard__01 {
+  position: absolute;
+  top: -365%;
+  right: 53%;
+}
+
+.s-seviceCard__02 {
+  position: absolute;
+  top: -456%;
+  right: 28%;
+}
+
+
+.b-serviceCard .subText {
+  letter-spacing: 0.2em;
+  line-height: 2;
+  padding-bottom: 200px;
+}
 

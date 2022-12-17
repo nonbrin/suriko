@@ -1,4 +1,45 @@
 @charset "UTF-8";
+.s-reasonVisual .l-S02 {
+  background-image: url(../img/bg_grey_top.png);
+  background-repeat: no-repeat;
+}
+
+
+.s-reasonVisual .l-L01 {
+  margin-top: 200px;
+  padding-left: 96px;
+}
+
+
+.s-reasonVisual .l-L01::before {
+  content: "REASON";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #E2F4FC;
+}
+
+.s-reasonVisual .l-L02 {
+  padding-left: 72px;
+  margin-bottom: 32px;
+}
+
+.s-reasonVisual .l-L03 {
+  padding-top: 32px;
+}
+
+
+.s-reasonVisual .l-L04 {
+  max-width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+}
+
+.s-reasonVisual .l-L05 {
+  display: flex;
+}
+
 .b-subTitle {
   color: #3A7CE5;
   font-size: 24px;
@@ -12,7 +53,7 @@
   position: relative;
 }
 
-.b-reasonCard__1 .subTitle {
+.b-reasonCard__01 .subTitle, .b-reasonCard__02 .subTitle, .b-reasonCard__03 .subTitle, .b-reasonCard__04 .subTitle, .b-reasonCard__05 .subTitle{
   color: #3A7CE5;
   margin-top: 8px;
 }
@@ -26,6 +67,8 @@
   display: flex;
   position: relative;
   align-items: flex-end;
+  letter-spacing: 0.2em;
+  line-height: 2;
 }
 
 .b-reasonCard__2 img {
@@ -37,8 +80,9 @@
   max-width: 560px;
   height: auto;
   margin-right: 32px;
-  padding-top: 64px;
+  padding-top: 62px;
 }
+
 
 .s-reasonVisual__text ul {
   max-width: 880px;
@@ -53,40 +97,15 @@
 
 .s-reasonVisual .b-subText {
   font-family: 'Roboto', sans-serif;
-  // font-weight: 60;
+  font-weight: bold;
   font-size: 60px;
   color: #C4E5F9;
   padding-right: 32px;
 }
 
-.s-reasonVisual .l-L02 {
-  background-image: url(/img/bg_grey_top.png);
-  padding-left: 96px;
-}
-
-.s-reasonVisual .l-L02::before {
-  content: "REASON";
-  font-size: 128px;
-  font-weight: bold;
-  font-family: 'M PLUS 1p', sans-serif;
-  color: #E2F4FC;
-}
-
-
-.s-reasonVisual .l-L02 {
-  padding-left: 72px;
-}
-
 .s-reasonVisual .b-headTitle {
   padding-bottom: 32px;
 }
-
-.s-reasonVisual .l-L04 {
-  max-width: 894px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .s-reasonVisual .l-L07 {
   display: inline-block;
@@ -99,11 +118,81 @@
 .b-reasonCard__01::before {
   content: '01';    
   position: absolute;   
-  top: 0;    
+  top: -166px;    
   left: -20px;
   width: 100px;
   height: 100px;
-  font-size: 100px;
+  font-size: 300px;
+  font-weight: bold;
   z-index: -100;
   color: #C4E5F9;
 }
+
+.b-reasonCard__02 {
+  position: relative;
+}
+.b-reasonCard__02::before {
+  content: '02';    
+  position: absolute;   
+  top: -170px;    
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+.b-reasonCard__03 {
+  position: relative;
+}
+.b-reasonCard__03::before {
+  content: '03';    
+  position: absolute;   
+  top: -170px;    
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+.b-reasonCard__04 {
+  position: relative;
+}
+.b-reasonCard__04::before {
+  content: '04';    
+  position: absolute;   
+  top: -170px;    
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+.b-reasonCard__05 {
+  position: relative;
+}
+.b-reasonCard__05::before {
+  content: '05';    
+  position: absolute;   
+  top: -158px;    
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: -100;
+  color: #C4E5F9;
+}
+
+// 青の背景
+
+
+
