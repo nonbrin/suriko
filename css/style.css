@@ -996,15 +996,6 @@ row
   display: inline-block;
 }
 
-
-.s-serviceVisual .l-L02 {
-  background-image: url(/img/service_bg_01.png);
-  background-size: cover;
-  width: 469px;
-  height: 1019.45px;
-}
-
-
 .s-serviceVisual {
   padding-top: 200px;
 }
@@ -1038,10 +1029,6 @@ row
   top: 59%;
   left: 74%;
   z-index: 1;
-}
-
-.b-subText {
-  font-size: 60px;
 }
 
 .b-service .head_3 span {
