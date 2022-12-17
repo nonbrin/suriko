@@ -725,12 +725,6 @@ a {
   font-weight: bold;
 }
 
-.container {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .footer {
   text-align: center;
   padding-top: 254.5px;
@@ -1033,6 +1027,20 @@ row
   padding-top: 200px;
 }
 
+.s-serviceVisual::before {
+  content: "";
+  position: absolute;
+  z-index: -100;
+  display: inline-block;
+  top: 108px;
+  left: 0;
+  width: 469px; /*画像の幅*/
+  height: 1019px; /*画像の高さ*/
+  background-image: url(../../img/service_bg_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .s-serviceVisual .l-L02 {
   max-width: 650px;
   margin-left: auto;
@@ -1074,14 +1082,6 @@ row
   top: 0;
   width: 300px;
   height: 300px;
-}
-
-.s-serviceVisual_bg {
-  position: absolute;
-  z-index: 222;
-  top: 0;
-  width: 300px;
-  height: 500px;
 }
 
 .b-serviceCard {
