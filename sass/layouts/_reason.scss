@@ -92,3 +92,18 @@
   display: inline-block;
 }
 
+// 数字疑似要素
+.b-reasonCard__01 {
+  position: relative;
+}
+.b-reasonCard__01::before {
+  content: '01';    
+  position: absolute;   
+  top: 0;    
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 100px;
+  z-index: -100;
+  color: #C4E5F9;
+}

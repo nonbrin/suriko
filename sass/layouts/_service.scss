@@ -1,21 +1,22 @@
 @charset "UTF-8";
 
 .s-serviceVisual  {
+  position: relative;
   padding-top: 200px;
 }
 
+// .s-serviceVisual .l-S03 {
+//   background-image: url(/img/service_bg_01.png);
+//   background-size: cover;
+// }
 .s-serviceVisual .l-L02 {
-  background-image: url(/img/service_bg_01.png);
-  background-size: cover;
-  width: 469px;
-  height: 1019.45px;
+  max-width: 650px;
+  margin-left: auto;
 }
 
-.b-serviceTitle .head_3 {
-  font-size: 50px;
-  letter-spacing: 0.15em;
-  font-weight: bold;
-}
+// .b-serviceTitle .head_3 {
+  
+// }
 
 .b-serviceTitle .subText {
   font-size: 16px;
@@ -41,7 +42,25 @@
   position: relative;
   z-index: 5;
 }
-
+// SVGと背景追加
+.s-serviceVisual__flex{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.s-serviceVisual_svg{
+  position: absolute;
+  z-index: 333;
+  top: 0;
+  width: 300px;
+  height: 300px;
+}
+.s-serviceVisual_bg{
+  position: absolute;
+  z-index: 222;
+  top: 0;
+  width: 300px;
+  height: 500px;
+}
 
 .b-serviceCard {
   max-width: 600px;
@@ -80,10 +99,7 @@
   padding-right: 72px;
 }
 
-.s-serviceVisual .l-L02 {
-  max-width: 650px;
-  margin-left: auto;
-}
+
 
 
 .s-serviceVisual .l-L03 {
