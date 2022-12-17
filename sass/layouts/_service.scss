@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.s-serviceVisual  {
+  padding-top: 200px;
+}
+
 .s-serviceVisual .l-L02 {
   background-image: url(/img/service_bg_01.png);
   background-size: cover;
@@ -7,8 +11,16 @@
   height: 1019.45px;
 }
 
-.s-serviceVisual  {
-  padding-top: 200px;
+.b-serviceTitle .head_3 {
+  font-size: 50px;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+}
+
+.b-serviceTitle .subText {
+  font-size: 16px;
+  line-height: 3;
+  letter-spacing: 0.02em;
 }
 
 .b-serviceTitle .head_3::before {
@@ -21,11 +33,6 @@
   top: 59%;
   left: 74%;
   z-index: 1;
-}
-
-
-.b-subText {
-  font-size: 60px;
 }
 
 .b-service .head_3 span {

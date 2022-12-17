@@ -738,13 +738,10 @@ header
   z-index: 10;
 }
 
-.b-head_2 {
-  margin: 135px 0 0 89px;
-}
-
-.b-hiroImage img {
-  max-width: 960px;
-  height: auto;
+.header .b-head_1 {
+  font-size: 40px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
 }
 
 /*----------------------------------------
@@ -752,39 +749,8 @@ header
 font-size
 
 ----------------------------------------*/
-h1 {
-  font-size: 40px;
-  line-height: 27px;
-  letter-spacing: 0.04em;
-}
-
-h2 {
-  font-size: 74px;
-  line-height: 1.6;
-  letter-spacing: 0em;
-  font-weight: bold;
-}
-
-.b-head_sub {
-  font-size: 53px;
-  line-height: 1.5;
-  letter-spacing: 0em;
-}
-
-h3 {
-  font-size: 50px;
-  letter-spacing: 0.15em;
-  font-weight: bold;
-}
-
 h4, li {
   font-size: 42px;
-}
-
-.subText {
-  font-size: 16px;
-  line-height: 3;
-  letter-spacing: 0.02em;
 }
 
 .subTitle {
@@ -808,6 +774,20 @@ row
   background-size: cover;
   background-position: bottom;
   height: 802px;
+}
+
+.s-mainVisual .b-head_2 {
+  margin: 135px 0 0 89px;
+  font-size: 74px;
+  line-height: 1.6;
+  letter-spacing: 0em;
+  font-weight: bold;
+}
+
+.s-mainVisual .b-head_sub {
+  font-size: 53px;
+  line-height: 1.5;
+  letter-spacing: 0em;
 }
 
 .b-teamTitle .head_3::before {
@@ -980,13 +960,13 @@ row
 
 .s-reasonVisual .b-subText {
   font-family: "Roboto", sans-serif;
-  font-weight: 60;
+  font-size: 60px;
   color: #C4E5F9;
   padding-right: 32px;
 }
 
 .s-reasonVisual .l-L02 {
-  background-color: #FAFAFA;
+  background-image: url(/img/bg_grey_top.png);
   padding-left: 96px;
 }
 
@@ -1016,21 +996,27 @@ row
   display: inline-block;
 }
 
-.b-subText {
-  font-size: 60px;
-}
-
-ol {
-  display: flex;
-  justify-content: center;
-}
-
-ol li {
-  list-style: none;
-}
-
 .s-serviceVisual {
   padding-top: 200px;
+}
+
+.s-serviceVisual .l-L02 {
+  background-image: url(/img/service_bg_01.png);
+  background-size: cover;
+  width: 469px;
+  height: 1019.45px;
+}
+
+.b-serviceTitle .head_3 {
+  font-size: 50px;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+}
+
+.b-serviceTitle .subText {
+  font-size: 16px;
+  line-height: 3;
+  letter-spacing: 0.02em;
 }
 
 .b-serviceTitle .head_3::before {

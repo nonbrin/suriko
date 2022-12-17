@@ -74,16 +74,10 @@ header
   z-index: 10;
 }
 
-
-
-.b-head_2 {
-  margin: 135px 0 0 89px;
-  
-}
-
-.b-hiroImage img {
-  max-width: 960px;
-  height: auto;
+.header .b-head_1 {
+  font-size: 40px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
 }
 
 
@@ -92,41 +86,36 @@ header
 font-size
 
 ----------------------------------------*/
-h1 {
-  font-size: 40px;
-  line-height: 27px;
-  letter-spacing: 0.04em;
-  
-}
 
-h2 {
-  font-size: 74px;
-  line-height: 1.6;
-  letter-spacing: 0em;
-  font-weight: bold;
-}
 
-.b-head_sub {
-  font-size: 53px;
-  line-height: 1.5;
-  letter-spacing: 0em;
-}
+// h2 {
+//   font-size: 74px;
+//   line-height: 1.6;
+//   letter-spacing: 0em;
+//   font-weight: bold;
+// }
 
-h3 {
-  font-size: 50px;
-  letter-spacing: 0.15em;
-  font-weight: bold;
-}
+// .b-head_sub {
+//   font-size: 53px;
+//   line-height: 1.5;
+//   letter-spacing: 0em;
+// }
+
+// h3 {
+//   font-size: 50px;
+//   letter-spacing: 0.15em;
+//   font-weight: bold;
+// }
 
 h4 , li{
   font-size: 42px;
 }
 
-.subText {
-  font-size: 16px;
-  line-height: 3;
-  letter-spacing: 0.02em;
-}
+// .subText {
+//   font-size: 16px;
+//   line-height: 3;
+//   letter-spacing: 0.02em;
+// }
 
 .subTitle {
   font-size: 24px;
