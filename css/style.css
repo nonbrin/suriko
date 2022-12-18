@@ -728,12 +728,10 @@ a {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  background-color: yellow;
 }
 
 .header {
   height: 72px;
-  background: yellow;
 }
 .header__wrapper {
   height: 100%;
