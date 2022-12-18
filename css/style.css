@@ -700,6 +700,7 @@ a {
 .l-L15,
 .l-L16 {
   width: 100%;
+  min-height: 24px;
 }
 
 .head_3 {
@@ -723,11 +724,6 @@ a {
 .footer__img {
   margin-top: -1000px;
   width: 100%;
-}
-
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .header {
@@ -890,10 +886,6 @@ a {
   top: 49%;
   left: 62%;
   z-index: 1;
-}
-
-.s-reasonVisual .l-S02 {
-  background-color: var(--bg);
 }
 
 .s-reasonVisual .grey_top,
