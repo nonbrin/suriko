@@ -17,9 +17,9 @@ body{
 // ここいじるよ・・・
 // ブレイクポイント
 $breakpoint: (
-  sp: 'screen and (max-width: 768px)',
-  tab: 'screen and (max-width: 1550px)',
-  pc: 'screen and (min-width: 1551px)'
+  sp: 'screen and (max-width: 375px)',
+  tab: 'screen and (max-width: 959px)',
+  pc: 'screen and (min-width: 960px)'
 );
 
 @mixin mq($bp) {

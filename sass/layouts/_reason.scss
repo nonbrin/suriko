@@ -1,26 +1,59 @@
 @charset "UTF-8";
-.s-reasonVisual .l-S02 {
-  background-color: var(--bg);
+
+.s-reasonVisual {
   position: relative;
-  z-index: -333;
 }
+// グレー背景
 .s-reasonVisual .grey_top,
 .s-reasonVisual .grey_bottom {
   width: 100%;
   background-color: orange;
 }
-
 .s-reasonVisual .grey_top .grey_top_img,
 .s-reasonVisual .grey_bottom .grey_bottom_img {
   width: 100%;
   height: 100%;
   margin: -5px 0;
 }
-
-.s-reasonVisual .l-L01 {
-  padding-left: 96px;
+// 青色背景
+.s-reasonVisual {
+  .l-S02 {
+    background-color: var(--bg);
+    padding: 0 72px;
+  }
+  .l-S03 {
+    width: calc(100% - 200px * 2);
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+  .b-bg__imgBox {
+    position: absolute;
+    width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+  .bg_01_right {
+    top: 200px;
+    right: 0;
+  }
+  .bg_02_left {
+    top: 900px;
+    left: 0;
+  }
+  .bg_03_right {
+    top: 1200px;
+    right: 0;
+  }
+  .bg_04_left {
+    top: 1600px;
+    left: 0;
+  }
 }
-
+// コンテンツ
+.s-reasonVisual .l-L01 {
+  margin-bottom: 50px;
+}
 .s-reasonVisual .l-L01::before {
   content: "REASON";
   font-size: 128px;
@@ -28,188 +61,107 @@
   font-family: 'M PLUS 1p', sans-serif;
   color: #E2F4FC;
 }
-
-.s-reasonVisual .l-L02 {
-  padding-left: 72px;
-  margin-bottom: 32px;
-}
-
-.s-reasonVisual .l-L03 {
-  padding-top: 32px;
-}
-
-
-.s-reasonVisual .l-L04 {
-  max-width: 945px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-}
-
-.s-reasonVisual .l-L05 {
+.s-reasonVisual .head_3 {
+  font-size: 50px;
+  letter-spacing: 0.15em;
   display: flex;
+  align-items: center;
+  &::after {
+    border-bottom: 2px solid var(--accent);
+    content: "";
+    width: 160px;
+    height: 30px;
+    margin-left: 36px;
+  }
+  .large_number {
+    font-size: 73px;
+  }
 }
-
-.s-reasonVisual__text {
+.s-reasonVisual .s-reasonVisual__list {
   font-size: 24px;
+  margin-bottom: 200px;
+  .b-list {
+    &__title {
+      display: flex;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid #C6E3F3;
+    }
+  }
+  .b-subText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #C4E5F9;
+    padding-right: 32px;
+  }
 }
-
-.b-subTitle {
-  color: #3A7CE5;
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-}
-
-
-.b-reasonCard__1 {
+.s-reasonVisual .b-reasonCard {
   position: relative;
+  z-index: 100;
+  &:not(:last-child) {
+    margin-bottom: 272px;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  .b-cardContents {
+    &__title {
+      position: relative;
+      font-size: 42px;
+      font-weight: bold;
+        &::before {
+          content: '01';    
+          position: absolute;   
+          top: -100px;    
+          left: 0;
+          font-size: 240px;
+          font-weight: bold;
+          z-index:  -100;
+          color: #e9f2f8;
+          font-family: 'Roboto';
+        }
+    }
+    &__subTitle {
+      color: #3A7CE5;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 62px;
+    }
+    &__subText {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+}
+.s-reasonVisual .b-reasonCard.card_02 {
+  .b-reasonCard__wrapper {
+    flex-direction: row-reverse;
+  }
+  .b-cardContents__title::before {
+    content: '02';
+  }
+}
+.s-reasonVisual .b-reasonCard.card_03 {
+  .b-cardContents__title::before {
+    content: '03';
+  }
+}
+.s-reasonVisual .b-reasonCard.card_04 {
+  .b-reasonCard__wrapper {
+    flex-direction: row-reverse;
+  }
+  .b-cardContents__title::before {
+    content: '04';
+  }
+}
+.s-reasonVisual .b-reasonCard.card_05 {
+  .b-cardContents__title::before {
+    content: '05';
+  }
 }
 
-.b-reasonCard__01 .subTitle, .b-reasonCard__02 .subTitle, .b-reasonCard__03 .subTitle, .b-reasonCard__04 .subTitle, .b-reasonCard__05 .subTitle{
-  color: #3A7CE5;
-  margin-top: 8px;
-}
 
-.b-reasonCard__1 .imageBox {
-  position: absolute;
-  top: -130px;
-}
-
-.b-reasonCard__2 {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  letter-spacing: 0.2em;
-  line-height: 2;
-}
-
-.b-reasonCard__2 img {
-  max-width: 264px;
-  height: auto;
-}
-
-.b-reasonCard__2 .subText {
-  max-width: 560px;
-  height: auto;
-  margin-right: 32px;
-  padding-top: 62px;
-}
-
-
-.s-reasonVisual__text ul {
-  max-width: 880px;
-  margin: 0 auto;
-}
-
-.s-reasonVisual__text li {
-  border-bottom: 1px solid #C6E3F3;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-}
-
-.s-reasonVisual .b-subText {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 60px;
-  color: #C4E5F9;
-  padding-right: 32px;
-}
-
-.s-reasonVisual .b-headTitle {
-  padding-bottom: 32px;
-}
-
-.s-reasonVisual .l-L07 {
-  display: inline-block;
-}
-
-// 数字疑似要素
-.b-reasonCard__01 {
-  position: relative;
-}
-.b-reasonCard__01::before {
-  content: '01';    
-  position: absolute;   
-  top: -166px;    
-  left: -20px;
-  width: 100px;
-  height: 100px;
-  font-size: 300px;
-  font-weight: bold;
-  z-index: -100;
-  color: #C4E5F9;
-}
-
-.b-reasonCard__02 {
-  position: relative;
-}
-.b-reasonCard__02::before {
-  content: '02';    
-  position: absolute;   
-  top: -170px;    
-  left: -20px;
-  width: 100px;
-  height: 100px;
-  font-size: 300px;
-  font-weight: bold;
-  z-index: -100;
-  color: #C4E5F9;
-}
-
-.b-reasonCard__03 {
-  position: relative;
-}
-.b-reasonCard__03::before {
-  content: '03';    
-  position: absolute;   
-  top: -170px;    
-  left: -20px;
-  width: 100px;
-  height: 100px;
-  font-size: 300px;
-  font-weight: bold;
-  z-index: -100;
-  color: #C4E5F9;
-}
-
-.b-reasonCard__04 {
-  position: relative;
-}
-.b-reasonCard__04::before {
-  content: '04';    
-  position: absolute;   
-  top: -170px;    
-  left: -20px;
-  width: 100px;
-  height: 100px;
-  font-size: 300px;
-  font-weight: bold;
-  z-index: -100;
-  color: #C4E5F9;
-}
-
-.b-reasonCard__05 {
-  position: relative;
-}
-.b-reasonCard__05::before {
-  content: '05';    
-  position: absolute;   
-  top: -158px;    
-  left: -20px;
-  width: 100px;
-  height: 100px;
-  font-size: 300px;
-  font-weight: bold;
-  z-index: -100;
-  color: #C4E5F9;
-}
-.row {
-  font-size: 73px;
-}
-
-// 青の背景
 
 
 
