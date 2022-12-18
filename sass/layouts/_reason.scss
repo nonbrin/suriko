@@ -63,7 +63,7 @@
   position: relative;
 }
 
-.b-reasonCard__1 .subTitle, .b-reasonCard__02 .subTitle, .b-reasonCard__03 .subTitle, .b-reasonCard__04 .subTitle, .b-reasonCard__05 .subTitle{
+.b-reasonCard__01 .subTitle, .b-reasonCard__02 .subTitle, .b-reasonCard__03 .subTitle, .b-reasonCard__04 .subTitle, .b-reasonCard__05 .subTitle{
   color: #3A7CE5;
   margin-top: 8px;
 }
@@ -122,10 +122,10 @@
 }
 
 // 数字疑似要素
-.b-reasonCard__1 {
+.b-reasonCard__01 {
   position: relative;
 }
-.b-reasonCard__1::before {
+.b-reasonCard__01::before {
   content: '01';    
   position: absolute;   
   top: -166px;    
@@ -138,10 +138,10 @@
   color: #C4E5F9;
 }
 
-.b-reasonCard__2 {
+.b-reasonCard__02 {
   position: relative;
 }
-.b-reasonCard__2::before {
+.b-reasonCard__02::before {
   content: '02';    
   position: absolute;   
   top: -170px;    
@@ -154,10 +154,10 @@
   color: #C4E5F9;
 }
 
-.b-reasonCard__3 {
+.b-reasonCard__03 {
   position: relative;
 }
-.b-reasonCard__3::before {
+.b-reasonCard__03::before {
   content: '03';    
   position: absolute;   
   top: -170px;    
@@ -170,10 +170,10 @@
   color: #C4E5F9;
 }
 
-.b-reasonCard__4 {
+.b-reasonCard__04 {
   position: relative;
 }
-.b-reasonCard__4::before {
+.b-reasonCard__04::before {
   content: '04';    
   position: absolute;   
   top: -170px;    
@@ -186,10 +186,10 @@
   color: #C4E5F9;
 }
 
-.b-reasonCard__5 {
+.b-reasonCard__05 {
   position: relative;
 }
-.b-reasonCard__5::before {
+.b-reasonCard__05::before {
   content: '05';    
   position: absolute;   
   top: -158px;    
