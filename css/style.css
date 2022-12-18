@@ -1084,159 +1084,98 @@ a {
 
 .s-serviceVisual {
   position: relative;
-  padding-top: 200px;
-  margin-bottom: 200px;
 }
 
-.s-serviceVisual::before {
-  content: "";
-  position: absolute;
-  z-index: -100;
-  display: inline-block;
-  top: 108px;
-  left: 0;
-  width: 469px; /*画像の幅*/
-  height: 1019px; /*画像の高さ*/
-  background-image: url(../../img/service_bg_01.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+.s-serviceVisual .l-S02 {
+  width: calc(100% - 144px);
+  max-width: 1296px;
+  margin: 0 auto;
 }
-
-.b-serviceCard {
-  position: relative;
-}
-
-.b-serviceCard::after {
-  content: "";
-  position: absolute;
-  z-index: 300;
-  display: inline-block;
-  top: 360px;
-  left: 275px;
-  width: 329px; /*画像の幅*/
-  height: 220px; /*画像の高さ*/
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.b-serviceCard__img1::after {
-  background-image: url(../../svg/service_card_01.svg);
-}
-
-.b-serviceCard__img2::after {
-  background-image: url(../../svg/service_card_02.svg);
-}
-
-.s-serviceVisual__flex {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 .s-serviceVisual .l-L01 {
-  padding-right: 72px;
-}
-
-.s-serviceVisual .l-L02 {
   width: calc((100% + 72px) / 2 - 72px);
   margin-left: auto;
   margin-bottom: 120px;
 }
+.s-serviceVisual .l-L03 {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+}
 
-.b-serviceTitle .head_3 {
+.s-serviceVisual .b-main__imgBox,
+.s-serviceVisual .b-bg__imgBox {
+  position: absolute;
+}
+.s-serviceVisual .b-main__imgBox img,
+.s-serviceVisual .b-bg__imgBox img {
+  width: 100%;
+}
+.s-serviceVisual .main_01_img {
+  top: 160px;
+  left: 200px;
+  width: 400px;
+  z-index: -50;
+}
+.s-serviceVisual .bg_01_left {
+  width: 472px;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.s-serviceVisual .l-L01::before {
+  content: "SERVICE";
+  font-size: 128px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #E2F4FC;
+}
+
+.s-serviceVisual .b-Main__title {
   font-size: 50px;
+  font-weight: bold;
   letter-spacing: 0.15em;
   display: flex;
   align-items: center;
+  margin-bottom: 48px;
 }
-
-.b-serviceTitle .head_3::after {
-  border-top: 2px solid var(--accent);
+.s-serviceVisual .b-Main__title::after {
+  border-bottom: 2px solid var(--accent);
   content: "";
   width: 160px;
   margin-left: 36px;
 }
-
-.b-serviceTitle .subText {
+.s-serviceVisual .b-Main__subText {
   font-size: 16px;
   line-height: 3;
   letter-spacing: 0.15em;
 }
 
-.s-serviceVisual_svg {
-  position: absolute;
-  z-index: 333;
-  top: 277px;
-  left: 160px;
-  width: 300px;
-  height: 300px;
+.s-serviceVisual .b-card__wrapper {
+  width: 45%;
 }
-
-.b-serviceCard .l-L03 {
-  margin-top: 120px;
-}
-
-.b-serviceCard {
-  max-width: 600px;
+.s-serviceVisual .b-card__wrapper .b-serviceCard {
   background-color: #EFF7FF;
+  padding: 48px;
   border-radius: 15px;
+  min-height: 80%;
 }
-
-.b-serviceCard .head_3 {
+.s-serviceVisual .b-card__wrapper .b-serviceCard .head_3 {
   text-align: center;
+  font-size: 42px;
+  margin-bottom: 24px;
 }
-
-.b-serviceCard .subText {
-  padding: 22px 60px 113px;
-  letter-spacing: 0.04em;
+.s-serviceVisual .b-card__wrapper .b-serviceCard .subText {
+  font-size: 16px;
   line-height: 2;
 }
-
-.s-serviceVisual .imageBox {
-  text-align: right;
-}
-
-.s-serviceVisual .l-L02::before {
-  content: "SERVICE";
-  font-size: 128px;
-  font-weight: bold;
-  color: #E2F4FC;
-  font-family: "M PLUS 1p", sans-serif;
-}
-
-.s-serviceVisual .l-L03 {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1298px;
+.s-serviceVisual .b-card__wrapper .b-card__imgBox {
+  width: 50%;
   margin-left: auto;
-  margin-right: auto;
+  margin-top: -14%;
 }
-
-.s-serviceVisual .l-L04 {
-  padding-top: 66px;
-}
-
-.s-serviceVisual .l-L05 {
-  margin-top: 25px;
-}
-
-.s-serviceVisual .l-L06 {
-  position: relative;
-}
-
-.s-serviceVisual .l-L07 {
-  position: relative;
-}
-
-.s-serviceCard__01 {
-  position: absolute;
-  top: -365%;
-  right: 53%;
-}
-
-.s-serviceCard__02 {
-  position: absolute;
-  top: -456%;
-  right: 28%;
+.s-serviceVisual .b-card__wrapper .b-card__imgBox_img {
+  width: 100%;
 }
 
 .s-teamVisual .l-S02 {
