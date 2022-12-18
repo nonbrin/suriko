@@ -15,3 +15,14 @@ body{
 // background : var(--accent);
 
 // ここいじるよ・・・
+$breakpoint: (
+  sp: 'screen and (max-width: 768px)',
+  tab: 'screen and (max-width: 1550px)',
+  pc: 'screen and (min-width: 1551px)'
+);
+
+@mixin mq($bp) {
+	@media #{map-get($breakpoint, $bp)} {
+		@content;
+	}
+}
