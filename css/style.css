@@ -1118,13 +1118,42 @@ a {
   background-size: contain;
 }
 
+.b-serviceCard {
+  position: relative;
+}
+
+.b-serviceCard::after {
+  content: "";
+  position: absolute;
+  z-index: 300;
+  display: inline-block;
+  top: 360px;
+  left: 275px;
+  width: 329px; /*画像の幅*/
+  height: 220px; /*画像の高さ*/
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.b-serviceCard__img1::after {
+  background-image: url(../../svg/service_card_01.svg);
+}
+
+.b-serviceCard__img2::after {
+  background-image: url(../../svg/service_card_02.svg);
+}
+
 .s-serviceVisual__flex {
   display: flex;
   flex-direction: column-reverse;
 }
 
+.s-serviceVisual .l-L01 {
+  padding-right: 133px;
+}
+
 .s-serviceVisual .l-L02 {
-  max-width: 650px;
+  max-width: 550px;
   margin-left: auto;
   margin-bottom: 120px;
 }
@@ -1136,8 +1165,8 @@ a {
   width: 160px;
   height: 2px;
   position: absolute;
-  top: 59%;
-  left: 74%;
+  top: 35%;
+  left: 85%;
   z-index: 1;
 }
 
@@ -1150,8 +1179,8 @@ a {
 .s-serviceVisual_svg {
   position: absolute;
   z-index: 333;
-  top: 55px;
-  left: 81px;
+  top: 277px;
+  left: 160px;
   width: 300px;
   height: 300px;
 }
@@ -1178,10 +1207,6 @@ a {
 
 .s-serviceVisual .imageBox {
   text-align: right;
-}
-
-.s-serviceVisual .l-L01 {
-  padding-right: 72px;
 }
 
 .s-serviceVisual .l-L02::before {
