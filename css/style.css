@@ -358,6 +358,7 @@ body {
   --accent: #4EADE4;
   --text: #333 ;
   --subtext: #3A7CE5;
+  --bg: #fafafa;
   background: var(--main);
   color: #333;
 }
@@ -805,6 +806,22 @@ row
   height: 502.25px;
 }
 
+.s-productsVisual .l-S02 {
+  background-color: var(--bg);
+}
+
+.s-productsVisual .grey_top,
+.s-productsVisual .grey_bottom {
+  width: 100%;
+  background-color: orange;
+}
+
+.s-productsVisual .grey_top .grey_top_img,
+.s-productsVisual .grey_bottom .grey_bottom_img {
+  width: 100%;
+  height: 100%;
+}
+
 .b-teamTitle .head_3::before {
   content: "";
   display: block;
@@ -889,10 +906,6 @@ row
   padding-top: 96px;
 }
 
-.s-productsVisual img {
-  max-width: 254px;
-}
-
 .lastText {
   max-width: 640px;
 }
@@ -919,12 +932,22 @@ row
 }
 
 .s-reasonVisual .l-S02 {
-  background-image: url(../img/bg_grey_top.png);
-  background-repeat: no-repeat;
+  background-color: var(--bg);
+}
+
+.s-reasonVisual .grey_top,
+.s-reasonVisual .grey_bottom {
+  width: 100%;
+  background-color: orange;
+}
+
+.s-reasonVisual .grey_top .grey_top_img,
+.s-reasonVisual .grey_bottom .grey_bottom_img {
+  width: 100%;
+  height: 100%;
 }
 
 .s-reasonVisual .l-L01 {
-  margin-top: 200px;
   padding-left: 96px;
 }
 
@@ -1113,6 +1136,7 @@ row
 .s-serviceVisual {
   position: relative;
   padding-top: 200px;
+  margin-bottom: 200px;
 }
 
 .s-serviceVisual::before {

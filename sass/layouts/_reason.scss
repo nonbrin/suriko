@@ -1,15 +1,22 @@
 @charset "UTF-8";
 .s-reasonVisual .l-S02 {
-  background-image: url(../img/bg_grey_top.png);
-  background-repeat: no-repeat;
+  background-color: var(--bg);
+}
+.s-reasonVisual .grey_top,
+.s-reasonVisual .grey_bottom {
+  width: 100%;
+  background-color: orange;
 }
 
+.s-reasonVisual .grey_top .grey_top_img,
+.s-reasonVisual .grey_bottom .grey_bottom_img {
+  width: 100%;
+  height: 100%;
+}
 
 .s-reasonVisual .l-L01 {
-  margin-top: 200px;
   padding-left: 96px;
 }
-
 
 .s-reasonVisual .l-L01::before {
   content: "REASON";
