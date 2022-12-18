@@ -777,6 +777,7 @@ a {
 .s-productsVisual .grey_bottom .grey_bottom_img {
   width: 100%;
   height: 100%;
+  margin: -5px;
 }
 
 .b-teamTitle .head_3::before {
@@ -888,6 +889,12 @@ a {
   z-index: 1;
 }
 
+.s-reasonVisual .l-S02 {
+  background-color: var(--bg);
+  position: relative;
+  z-index: -333;
+}
+
 .s-reasonVisual .grey_top,
 .s-reasonVisual .grey_bottom {
   width: 100%;
@@ -898,6 +905,7 @@ a {
 .s-reasonVisual .grey_bottom .grey_bottom_img {
   width: 100%;
   height: 100%;
+  margin: -5px;
 }
 
 .s-reasonVisual .l-L01 {
