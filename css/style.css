@@ -948,6 +948,10 @@ a {
   display: flex;
 }
 
+.s-reasonVisual__text {
+  font-size: 24px;
+}
+
 .b-subTitle {
   color: #3A7CE5;
   font-size: 24px;
@@ -1157,31 +1161,33 @@ a {
 }
 
 .s-serviceVisual .l-L01 {
-  padding-right: 133px;
+  padding-right: 72px;
 }
 
 .s-serviceVisual .l-L02 {
-  max-width: 550px;
+  width: calc((100% + 72px) / 2 - 72px);
   margin-left: auto;
   margin-bottom: 120px;
 }
 
-.b-serviceTitle .head_3::before {
+.b-serviceTitle .head_3 {
+  font-size: 50px;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+}
+
+.b-serviceTitle .head_3::after {
+  border-top: 2px solid var(--accent);
   content: "";
-  display: block;
-  border-top: solid 2px #D1DEFF;
   width: 160px;
-  height: 2px;
-  position: absolute;
-  top: 35%;
-  left: 85%;
-  z-index: 1;
+  margin-left: 36px;
 }
 
 .b-serviceTitle .subText {
   font-size: 16px;
   line-height: 3;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.15em;
 }
 
 .s-serviceVisual_svg {
@@ -1209,7 +1215,7 @@ a {
 
 .b-serviceCard .subText {
   padding: 22px 60px 113px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.04em;
   line-height: 2;
 }
 
