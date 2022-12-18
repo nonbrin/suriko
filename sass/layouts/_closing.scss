@@ -1,2 +1,59 @@
 @charset "UTF-8";
+@use "../foundation/mixin" as *;
 
+.closing{
+  &__warrper{
+    margin-top: 200px;
+  }
+  &__container{
+    width: calc(100% - 72px * 2);
+    margin: 0 auto;
+    margin-bottom: 505px;
+  }
+  &__box{
+    margin-bottom: 96px;
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title::after{
+    content: "";
+    border-top: 2px solid var(--accent) ;
+    width: 160px;
+    margin-left: 36px;
+  }
+  &__area{
+    width: 100%;
+    // display: flex;
+  }
+  &__imageBox{
+    width: 254px;
+  }
+  &__text{
+    position: relative;
+    max-width: 610px;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    line-height: 2.25;
+    width: calc(100% - 254px);
+    margin: 0 auto;
+  }
+  &__text::before{
+    content: '';
+    position: absolute;
+    background-image: url(../../svg/last_01.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 300;
+    display: inline-block;
+    top: 32px;    
+    left: -281px;
+    width: 254px;/*画像の幅*/
+    height: 205px;/*画像の高さ*/
+  }
+  &__subText_1{
+    margin-bottom: 32px;
+  }
+}

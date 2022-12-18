@@ -15,3 +15,43 @@ body{
 // background : var(--accent);
 
 // ここいじるよ・・・
+
+//ブレイクポイント
+$breakpoint: (
+  sp: 'screen and (max-width: 768px)',
+  tab: 'screen and (max-width: 1550px)',
+  pc: 'screen and (min-width: 1551px)'
+);
+
+@mixin mq($bp) {
+	@media #{map-get($breakpoint, $bp)} {
+		@content;
+	}
+}
+
+
+//ブレイクポイント tae
+// $breakpoints: (
+//   sm: 600,
+//   md: 768,
+//   mi: 767,
+//   lg: 1024,
+//   xl: 1550,
+// );
+
+//メディアクエリー
+// $mediaquerys: (
+//   sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
+//   md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+//   xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+// );
+
+// @mixin mq($mediaquery: md) {
+//   @media #{map-get($mediaquerys, $mediaquery)} {
+//     @content;
+//   }
+// }
+
+// @include mq(md){
+
+// }

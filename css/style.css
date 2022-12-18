@@ -718,6 +718,14 @@ a {
   text-align: center;
   color: var(--main);
 }
+.footer__text small {
+  font-size: 20px;
+}
+@media screen and (max-width: 1550px) {
+  .footer__text small {
+    font-size: 12px;
+  }
+}
 .footer__imgBox {
   width: 100%;
 }
@@ -1328,4 +1336,58 @@ a {
 .s-teamVisual img {
   max-width: 469px;
   height: auto;
+}
+
+.closing__warrper {
+  margin-top: 200px;
+}
+.closing__container {
+  width: calc(100% - 144px);
+  margin: 0 auto;
+  margin-bottom: 505px;
+}
+.closing__box {
+  margin-bottom: 96px;
+}
+.closing__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closing__title::after {
+  content: "";
+  border-top: 2px solid var(--accent);
+  width: 160px;
+  margin-left: 36px;
+}
+.closing__area {
+  width: 100%;
+}
+.closing__imageBox {
+  width: 254px;
+}
+.closing__text {
+  position: relative;
+  max-width: 610px;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  line-height: 2.25;
+  width: calc(100% - 254px);
+  margin: 0 auto;
+}
+.closing__text::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/last_01.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300;
+  display: inline-block;
+  top: 32px;
+  left: -281px;
+  width: 254px; /*画像の幅*/
+  height: 205px; /*画像の高さ*/
+}
+.closing__subText_1 {
+  margin-bottom: 32px;
 }
