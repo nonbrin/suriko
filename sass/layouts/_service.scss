@@ -55,7 +55,7 @@
 }
 
 .s-serviceVisual .l-L02 {
-  width: calc(50% - 72px);
+  width: calc((100% + 72px)/2 - 72px);
   margin-left: auto;
   margin-bottom: 120px;
 }
@@ -66,8 +66,8 @@
   letter-spacing: 0.15em;
   display: flex;
   align-items: center;
-
 }
+
 .b-serviceTitle .head_3::after{
   border-top: 2px solid var(--accent) ;
   content: "";

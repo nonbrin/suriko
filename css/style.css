@@ -1157,7 +1157,7 @@ a {
 }
 
 .s-serviceVisual .l-L02 {
-  width: calc(50% - 72px);
+  width: calc((100% + 72px) / 2 - 72px);
   margin-left: auto;
   margin-bottom: 120px;
 }
