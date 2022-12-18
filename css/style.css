@@ -1161,7 +1161,7 @@ row
 .s-serviceVisual_svg {
   position: absolute;
   z-index: 333;
-  top: 184.04px;
+  top: 55px;
   left: 81px;
   width: 300px;
   height: 300px;
@@ -1183,6 +1183,8 @@ row
 
 .b-serviceCard .subText {
   padding: 22px 60px 113px;
+  letter-spacing: 0.2em;
+  line-height: 2;
 }
 
 .s-serviceVisual .imageBox {
@@ -1225,22 +1227,16 @@ row
   position: relative;
 }
 
-.s-seviceCard__01 {
+.s-serviceCard__01 {
   position: absolute;
   top: -365%;
   right: 53%;
 }
 
-.s-seviceCard__02 {
+.s-serviceCard__02 {
   position: absolute;
   top: -456%;
   right: 28%;
-}
-
-.b-serviceCard .subText {
-  letter-spacing: 0.2em;
-  line-height: 2;
-  padding-bottom: 200px;
 }
 
 .s-teamVisual .l-S02 {
