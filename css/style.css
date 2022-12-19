@@ -1278,6 +1278,8 @@ a {
   margin-bottom: 42px;
 }
 .team__list {
+  max-width: 440px;
+  width: 100%;
   letter-spacing: 0.2em;
   line-height: 2;
 }
@@ -1288,7 +1290,7 @@ a {
   margin-bottom: 176px;
 }
 .team__imgBox {
-  width: 90%;
+  width: 100%;
 }
 .team__img {
   width: 100%;

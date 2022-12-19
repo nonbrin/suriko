@@ -78,6 +78,8 @@
     margin-bottom: 42px;
   }
   &__list{
+    max-width: 440px;
+    width: 100%;
     letter-spacing: 0.2em;
     line-height: 2;
   }
@@ -88,7 +90,7 @@
     margin-bottom: 176px;
   }
   &__imgBox{
-    width: 90%;
+    width: 100%;
   }
   &__img{
     width: 100%;
