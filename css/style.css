@@ -966,19 +966,19 @@ a {
   width: 100%;
 }
 .s-reasonVisual .bg_01_right {
-  top: 200px;
+  top: 800px;
   right: 0;
 }
 .s-reasonVisual .bg_02_left {
-  top: 900px;
+  top: 1800px;
   left: 0;
 }
 .s-reasonVisual .bg_03_right {
-  top: 1200px;
+  top: 2200px;
   right: 0;
 }
 .s-reasonVisual .bg_04_left {
-  top: 1600px;
+  top: 2800px;
   left: 0;
 }
 
