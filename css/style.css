@@ -1268,7 +1268,7 @@ a {
   letter-spacing: 0.02em;
 }
 .team__group {
-  width: calc(100% - 400px);
+  width: calc(100% - 200px);
   max-width: 1296px;
   margin: 0 auto;
 }
