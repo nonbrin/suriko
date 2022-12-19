@@ -740,7 +740,8 @@ a {
 .header__wrapper {
   height: 100%;
   margin: 0 auto;
-  padding: 0 72px;
+  width: calc(100% - 144px);
+  max-width: 1296px;
   display: flex;
   align-items: center;
 }
@@ -754,6 +755,11 @@ a {
 .s-mainVisual {
   position: relative;
 }
+.s-mainVisual .l-S02 {
+  width: calc(100% - 144px);
+  max-width: 1296px;
+  margin: 0 auto;
+}
 
 .s-mainVisual::before {
   content: "";
@@ -764,8 +770,8 @@ a {
 .s-mainVisual .b-head_2 {
   position: absolute;
   top: 88px;
-  bottom: 0;
-  left: 72px;
+  width: calc(100% - 144px);
+  max-width: 1296px;
   font-size: 74px;
   line-height: 1.6;
   letter-spacing: 0em;
@@ -789,7 +795,7 @@ a {
 }
 .s-mainVisual .b-main__imgBox {
   position: absolute;
-  bottom: 72px;
+  top: 240px;
   right: 0;
   z-index: -100;
   width: 60%;

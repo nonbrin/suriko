@@ -6,7 +6,8 @@ height: 72px;
   &__wrapper {
     height: 100%;
     margin: 0 auto;
-    padding: 0 72px;
+    width: calc(100% - 72px * 2);
+    max-width: 1296px;
     display: flex;
     align-items: center;
   }
