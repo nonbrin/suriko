@@ -972,7 +972,7 @@ a {
   padding: 0 72px;
 }
 .s-reasonVisual .l-S03 {
-  width: calc(100% - 400px);
+  width: calc(100% - 200px);
   max-width: 1296px;
   margin: 0 auto;
 }
@@ -992,7 +992,7 @@ a {
   left: 0;
 }
 .s-reasonVisual .bg_03_right {
-  top: 2200px;
+  top: 2400px;
   right: 0;
 }
 .s-reasonVisual .bg_04_left {
@@ -1149,7 +1149,7 @@ a {
 
 .s-serviceVisual .l-L01::before {
   content: "SERVICE";
-  font-size: 128px;
+  font-size: 100px;
   font-weight: bold;
   font-family: "M PLUS 1p", sans-serif;
   color: #E2F4FC;
