@@ -1,78 +1,96 @@
 @charset "UTF-8";
-.s-teamVisual .l-S02 {
-  position: relative;
-}
+@use "../foundation/mixin" as *;
 
-.s-teamVisual .l-S02::before{
-  content:'' ;    
-  position: absolute;
-  z-index: -100;
-  display: inline-block;
-  top: 108px;    
-  right: 0;
-  width: 281px;/*画像の幅*/
-  height: 1085px;/*画像の高さ*/
-  background-image: url(../../img/teams_bg_01.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.s-teamVisual .l-L01 {
-  margin-top: 200px;
-  padding-left: 96px;
-}
-
-.s-teamVisual .l-L01::before {
-  content: "TEAMS";
-  font-size: 128px;
-  font-weight: bold;
-  font-family: 'M PLUS 1p', sans-serif;
-  color: #E2F4FC;
-}
-
-.s-teamVisual .l-L03 {
-  max-width: 909px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-}
-
-.s-teamVisual .l-L04 {
-  display: flex;
-}
-
-.s-teamVisual .head_4 {
-  font-weight: bold;
-}
-
-.b-teamTitle .subText {
-  max-width: 700px;
-  line-height: 3;
-  letter-spacing: 0.02em;
-}
-
-.b-lastTitle {
-  max-width: 794px;
-}
-
-.b-lastTitle .subText {
-  max-width: 640px;
-}
-
-.b-lastTitle .subText:last-child {
-  padding-top: 32px;
-}
-
-
-.s-teamVisual .b-teamTitle {
-  max-width: 823px;
-} 
-
-.s-teamVisual .b-teamBox {
-  display: flex;
-}
-
-.s-teamVisual img {
-  max-width: 469px;
-  height: auto;
+.team {
+  &__section{
+    margin-top: 200px;
+  }
+  &__container{
+    position: relative;
+  }
+  &__container::before{
+    content:'' ; 
+    position: absolute;
+    z-index: -100;
+    display: inline-block;
+    top: 108px;    
+    right: 0;
+    width: 200px;/*画像の幅*/
+    height: 1085px;/*画像の高さ*/
+    background-image: url(../../img/teams_bg_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__container::after{
+    content:'' ; 
+    position: absolute;
+    z-index: -100;
+    display: inline-block;
+    top: 708px;    
+    left: 0;
+    width: 200px;/*画像の幅*/
+    height: 1085px;/*画像の高さ*/
+    background-image: url(../../img/teams_bg_02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__wrapper{
+    width: calc(100% - 72px * 2);
+    margin: 0 auto;
+    max-width : 1296px ;
+    margin-bottom: 30px;
+  }
+  &__titleBox{
+    margin-bottom: 120px;
+    &::before {
+      content: "TEAMS";
+      font-size: 128px;
+      font-weight: bold;
+      font-family: 'M PLUS 1p', sans-serif;
+      color: #E2F4FC;
+    }
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  &__title::after{
+    content: "";
+    border-top: 2px solid var(--accent) ;
+    width: 160px;
+    margin-left: 36px;
+  }
+  &__text{
+    max-width: 823px;
+    width: 100%;
+    line-height: 3;
+    letter-spacing: 0.02em;
+  }
+  &__group{
+    width: calc(100% - 200px * 2);
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+  &__listTitle{
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 42px;
+  }
+  &__list{
+    letter-spacing: 0.2em;
+    line-height: 2;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 176px;
+  }
+  &__imgBox{
+    width: 90%;
+  }
+  &__img{
+    width: 100%;
+  }
 }
