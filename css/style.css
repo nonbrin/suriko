@@ -1130,7 +1130,7 @@ a {
 }
 @media screen and (max-width: 540px) {
   .s-reasonVisual .b-bg__imgBox {
-    width: 58px;
+    width: 45px;
   }
 }
 .s-reasonVisual .b-bg__imgBox img {
@@ -1174,7 +1174,7 @@ a {
 }
 @media screen and (max-width: 959px) {
   .s-reasonVisual .bg_04_left {
-    top: 3170px;
+    top: 2435px;
   }
 }
 
@@ -1314,8 +1314,8 @@ a {
 }
 @media screen and (max-width: 959px) {
   .s-reasonVisual .b-reasonCard .b-cardContents__title::before {
-    font-size: 200px;
-    top: -83px;
+    font-size: 100px;
+    top: -40px;
   }
 }
 .s-reasonVisual .b-reasonCard .b-cardContents__subTitle {
@@ -1327,7 +1327,7 @@ a {
 @media screen and (max-width: 959px) {
   .s-reasonVisual .b-reasonCard .b-cardContents__subTitle {
     font-size: 13px;
-    margin-bottom: 24px;
+    margin: 8px 0 24px 0;
   }
 }
 .s-reasonVisual .b-reasonCard .b-cardContents__subText {
@@ -1366,6 +1366,9 @@ a {
   .b-card__imgBox {
     text-align: end;
   }
+}
+.b-card__imgBox img {
+  width: 127px;
 }
 
 .s-serviceVisual {

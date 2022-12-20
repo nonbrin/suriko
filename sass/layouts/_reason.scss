@@ -40,7 +40,7 @@
       width: 116px;
     }
     @include mq(sp) {
-      width: 58px;
+      width: 45px;
     }
     img {
       width: 100%;
@@ -74,7 +74,7 @@
     top: 2800px;
     left: 0;
     @include mq(tab) {
-      top: 3170px;
+      top: 2435px;
     }
   }
 }
@@ -186,8 +186,8 @@
           color: #e9f2f8;
           font-family: 'Roboto';
           @include mq(tab) {
-            font-size: 200px;
-            top: -83px;
+            font-size: 100px;
+            top: -40px;
           }
         }
     }
@@ -198,7 +198,7 @@
       margin-bottom: 62px;
       @include mq(tab) {
         font-size: 13px;
-        margin-bottom: 24px;
+        margin: 8px 0 24px 0;
       }
     }
     &__subText {
@@ -240,6 +240,9 @@
 .b-card__imgBox {
   @include mq(tab) {
     text-align: end;
+  }
+  img {
+    width: 127px;
   }
 }
 
