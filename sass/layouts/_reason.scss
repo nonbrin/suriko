@@ -8,7 +8,7 @@
 .s-reasonVisual .grey_top,
 .s-reasonVisual .grey_bottom {
   width: 100%;
-  background-color: orange;
+  // background-color: orange;
 }
 .s-reasonVisual .grey_top .grey_top_img,
 .s-reasonVisual .grey_bottom .grey_bottom_img {
@@ -29,12 +29,18 @@
     width: calc(100% - 200px);
     max-width: 1296px;
     margin: 0 auto;
+    @include mq(sp) {
+      width: calc(100% - 42px);
+    }
   }
   .b-bg__imgBox {
     position: absolute;
     width: 200px;
     @include mq(tab) {
       width: 116px;
+    }
+    @include mq(sp) {
+      width: 58px;
     }
     img {
       width: 100%;
@@ -46,18 +52,30 @@
     @include mq(tab) {
       top: 740px;
     }
+    @include mq(sp) {
+      top: 635px;
+    }
   }
   .bg_02_left {
     top: 1800px;
     left: 0;
+    @include mq(tab) {
+      top: 1635px;
+    }
   }
   .bg_03_right {
     top: 2400px;
     right: 0;
+    @include mq(tab) {
+      top: 2250px;
+    }
   }
   .bg_04_left {
     top: 2800px;
     left: 0;
+    @include mq(tab) {
+      top: 3170px;
+    }
   }
 }
 // コンテンツ
@@ -94,6 +112,9 @@
     @include mq(tab) {
       height: 13px;
     }
+    @include mq(sp) {
+      width: 30px;
+    }
   }
   .large_number {
     font-size: 73px;
@@ -107,6 +128,7 @@
   margin-bottom: 200px;
   @include mq(tab) {
     margin-bottom: 120px;
+    font-size: 16px;
   }
   .b-list {
     &__title {
@@ -163,6 +185,10 @@
           z-index:  -100;
           color: #e9f2f8;
           font-family: 'Roboto';
+          @include mq(tab) {
+            font-size: 200px;
+            top: -83px;
+          }
         }
     }
     &__subTitle {
@@ -211,7 +237,11 @@
   }
 }
 
-
+.b-card__imgBox {
+  @include mq(tab) {
+    text-align: end;
+  }
+}
 
 
 

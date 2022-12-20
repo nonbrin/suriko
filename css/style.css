@@ -1091,7 +1091,6 @@ a {
 .s-reasonVisual .grey_top,
 .s-reasonVisual .grey_bottom {
   width: 100%;
-  background-color: orange;
 }
 
 .s-reasonVisual .grey_top .grey_top_img,
@@ -1115,6 +1114,11 @@ a {
   max-width: 1296px;
   margin: 0 auto;
 }
+@media screen and (max-width: 540px) {
+  .s-reasonVisual .l-S03 {
+    width: calc(100% - 42px);
+  }
+}
 .s-reasonVisual .b-bg__imgBox {
   position: absolute;
   width: 200px;
@@ -1122,6 +1126,11 @@ a {
 @media screen and (max-width: 959px) {
   .s-reasonVisual .b-bg__imgBox {
     width: 116px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .s-reasonVisual .b-bg__imgBox {
+    width: 58px;
   }
 }
 .s-reasonVisual .b-bg__imgBox img {
@@ -1136,17 +1145,37 @@ a {
     top: 740px;
   }
 }
+@media screen and (max-width: 540px) {
+  .s-reasonVisual .bg_01_right {
+    top: 635px;
+  }
+}
 .s-reasonVisual .bg_02_left {
   top: 1800px;
   left: 0;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .bg_02_left {
+    top: 1635px;
+  }
 }
 .s-reasonVisual .bg_03_right {
   top: 2400px;
   right: 0;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .bg_03_right {
+    top: 2250px;
+  }
+}
 .s-reasonVisual .bg_04_left {
   top: 2800px;
   left: 0;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .bg_04_left {
+    top: 3170px;
+  }
 }
 
 .s-reasonVisual .l-L01 {
@@ -1194,6 +1223,11 @@ a {
     height: 13px;
   }
 }
+@media screen and (max-width: 540px) {
+  .s-reasonVisual .head_3::after {
+    width: 30px;
+  }
+}
 .s-reasonVisual .head_3 .large_number {
   font-size: 73px;
 }
@@ -1210,6 +1244,7 @@ a {
 @media screen and (max-width: 959px) {
   .s-reasonVisual .s-reasonVisual__list {
     margin-bottom: 120px;
+    font-size: 16px;
   }
 }
 .s-reasonVisual .s-reasonVisual__list .b-list__title {
@@ -1277,6 +1312,12 @@ a {
   color: #e9f2f8;
   font-family: "Roboto";
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-reasonCard .b-cardContents__title::before {
+    font-size: 200px;
+    top: -83px;
+  }
+}
 .s-reasonVisual .b-reasonCard .b-cardContents__subTitle {
   color: #3A7CE5;
   font-size: 24px;
@@ -1319,6 +1360,12 @@ a {
 
 .s-reasonVisual .b-reasonCard.card_05 .b-cardContents__title::before {
   content: "05";
+}
+
+@media screen and (max-width: 959px) {
+  .b-card__imgBox {
+    text-align: end;
+  }
 }
 
 .s-serviceVisual {
