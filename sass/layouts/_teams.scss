@@ -4,6 +4,9 @@
 .team {
   &__section{
     margin-top: 200px;
+    @include mq(tab){
+      margin-top: 300px;
+    }
   }
   &__container{
     position: relative;
@@ -15,11 +18,18 @@
     display: inline-block;
     top: 108px;    
     right: 0;
-    width: 200px;/*画像の幅*/
-    height: 1085px;/*画像の高さ*/
+    width: 200px;
+    height: 1085px;
     background-image: url(../../img/teams_bg_01.png);
     background-repeat: no-repeat;
     background-size: contain;
+    @include mq(tab){
+      top: -54px;
+      width: 100px;
+    }
+    @include mq(sp){
+      width: 50px;
+    }
   }
   &__container::after{
     content:'' ; 
@@ -33,12 +43,24 @@
     background-image: url(../../img/teams_bg_02.png);
     background-repeat: no-repeat;
     background-size: contain;
+    @include mq(tab){
+      top: 1800px;
+      width: 100px;
+    }
+    @include mq(sp){
+      width: 55px;
+    }
   }
   &__wrapper{
     width: calc(100% - 72px * 2);
     margin: 0 auto;
     max-width : 1296px ;
     margin-bottom: 30px;
+    @include mq(tab){
+      width: calc(100% - 24px * 2);
+      max-width : 700px ;
+      margin-bottom: 100px;
+    }
   }
   &__titleBox{
     margin-bottom: 120px;
@@ -48,34 +70,57 @@
       font-weight: bold;
       font-family: 'M PLUS 1p', sans-serif;
       color: #E2F4FC;
+      @include mq(tab){
+        font-size: 50px;
+      }
+    }
+    @include mq(tab){
+      margin-bottom: 80px;
     }
   }
   &__title{
     display: flex;
     align-items: center;
     margin-bottom: 48px;
+    @include mq(tab){
+      font-size: 20px;
+    }
   }
   &__title::after{
     content: "";
     border-top: 2px solid var(--accent) ;
     width: 160px;
     margin-left: 36px;
+    @include mq(tab){
+      width: 30px;
+      margin-left: 8px;
+    }
   }
   &__text{
     max-width: 823px;
     width: 100%;
     line-height: 3;
     letter-spacing: 0.02em;
+    @include mq(tab){
+      max-width: 700px;
+    }
   }
   &__group{
     width: calc(100% - 100px * 2);
     max-width: 1296px;
     margin: 0 auto;
+    @include mq(tab){
+      width: calc(100% - 24px * 2);
+      max-width : 700px ;
+    }
   }
   &__listTitle{
     font-size: 42px;
     font-weight: bold;
     margin-bottom: 42px;
+    @include mq(tab){
+      font-size: 20px;
+    }
   }
   &__list{
     max-width: 440px;
@@ -88,9 +133,16 @@
     justify-content: space-between;
     position: relative;
     margin-bottom: 176px;
+    @include mq(tab){
+      display: block;
+      margin-bottom: 40px;
+    }
   }
   &__imgBox{
     width: 100%;
+    @include mq(tab){
+      width: 80%;
+    }
   }
   &__img{
     width: 100%;

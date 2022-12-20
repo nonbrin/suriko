@@ -17,7 +17,7 @@ body{
 // ここいじるよ・・・
 // ブレイクポイント
 $breakpoint: (
-  sp: 'screen and (max-width: 375px)',
+  sp: 'screen and (max-width: 540px)',
   tab: 'screen and (max-width: 959px)',
   pc: 'screen and (min-width: 960px)'
 );
@@ -27,6 +27,10 @@ $breakpoint: (
 		@content;
 	}
 }
+
+// @include mq(tab){
+
+// }
 
 
 //ブレイクポイント tae

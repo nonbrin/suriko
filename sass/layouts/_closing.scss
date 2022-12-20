@@ -2,21 +2,35 @@
 @use "../foundation/mixin" as *;
 
 .closing{
-  &__warrper{
+  &__wrapper{
     margin-top: 200px;
   }
   &__container{
     width: calc(100% - 72px * 2);
     margin: 0 auto;
     margin-bottom: 505px;
+    @include mq(tab){
+      width: calc(100% - 24px * 2);
+      margin-bottom: 120px;
+    }
   }
   &__box{
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
     margin-bottom: 96px;
+    @include mq(tab){
+      max-width: 580px;
+      margin-bottom: 24px;
+    }
   }
   &__title{
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mq(tab){
+      font-size: 24px;
+    }
   }
   &__title::after{
     content: "";
@@ -25,34 +39,53 @@
     margin-left: 36px;
   }
   &__area{
-    width: 100%;
-    // display: flex;
+    width: calc(100% - 100px * 2);
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(tab){
+      width: 100% ;
+      max-width: 700px;
+      display: block;
+    }
   }
   &__imageBox{
     width: 254px;
   }
+  &__img{
+    width: 100%;
+  }
   &__text{
-    position: relative;
-    max-width: 610px;
+    max-width: 850px;
+    width: 100%;
+    // width: calc(100% - 254px);
     font-size: 18px;
     letter-spacing: 0.2em;
     line-height: 2.25;
-    width: calc(100% - 254px);
     margin: 0 auto;
+    margin-left: 24px;
+    @include mq(tab){
+      margin: 0 0 24px;
+    }
   }
-  &__text::before{
-    content: '';
-    position: absolute;
-    background-image: url(../../svg/last_01.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 300;
-    display: inline-block;
-    top: 32px;    
-    left: -281px;
-    width: 254px;/*画像の幅*/
-    height: 205px;/*画像の高さ*/
-  }
+  // 疑似要素でつけた場合上にposition: relative;
+  // &__text::before{
+  //   content: '';
+  //   position: absolute;
+  //   background-image: url(../../svg/last_01.svg);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   z-index: 300;
+  //   display: inline-block;
+  //   top: 32px;    
+  //   left: -281px;
+  //   width: 80%;
+  //   height: 205px;
+  //   margin-left: 20px;
+  // }
   &__subText_1{
     margin-bottom: 32px;
   }

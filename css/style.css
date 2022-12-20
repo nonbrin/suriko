@@ -812,6 +812,12 @@ a {
   height: 100%;
   margin: -70px 0;
 }
+@media screen and (max-width: 959px) {
+  .products .grey_top .grey_top_img,
+  .products .grey_bottom .grey_bottom_img {
+    margin: -45px 0;
+  }
+}
 
 .products {
   width: 100%;
@@ -826,8 +832,19 @@ a {
   max-width: 1296px;
   margin: 40px auto;
 }
+@media screen and (max-width: 959px) {
+  .products__wrapper {
+    width: calc(100% - 48px);
+    max-width: 700px;
+  }
+}
 .products__titleBox {
   margin-bottom: 200px;
+}
+@media screen and (max-width: 959px) {
+  .products__titleBox {
+    margin-bottom: 80px;
+  }
 }
 .products__titleBox::before {
   content: "PRODUCTS";
@@ -835,6 +852,11 @@ a {
   font-weight: bold;
   font-family: "M PLUS 1p", sans-serif;
   color: #E2F4FC;
+}
+@media screen and (max-width: 959px) {
+  .products__titleBox::before {
+    font-size: 50px;
+  }
 }
 .products__title {
   display: flex;
@@ -847,11 +869,28 @@ a {
   width: 160px;
   margin-left: 36px;
 }
+@media screen and (max-width: 959px) {
+  .products__title::after {
+    width: 30px;
+    margin-left: 8px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .products__title {
+    font-size: 20px;
+  }
+}
 .products__box {
   width: 100%;
 }
+@media screen and (max-width: 959px) {
+  .products__box {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
 
-.card {
+.card__box {
   display: block;
   width: 100%;
   max-width: 560px;
@@ -862,27 +901,34 @@ a {
   transition: 0.4s;
   border-radius: 15px 15px 15px 15px;
 }
-
-.card:not(:last-child) {
-  margin-bottom: 40px;
+@media screen and (max-width: 959px) {
+  .card__box {
+    max-width: 700px;
+  }
 }
-
 .card__title {
   font-size: 24px;
   padding: 24px;
 }
-
 .card__text {
   font-size: 16px;
   padding: 0 24px 24px;
 }
-
 .card__imageBox {
   width: 100%;
   height: 36vw;
   max-height: 240px;
   background: #d5e6ec;
   border-radius: 15px 15px 0 0;
+}
+@media screen and (max-width: 959px) {
+  .card__imageBox {
+    max-height: 160px;
+  }
+}
+
+.card__box:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .layout--2,
@@ -904,13 +950,29 @@ a {
   width: calc((100% - 80px) / 2);
   margin: 0;
 }
+@media screen and (max-width: 959px) {
+  .layout--2 .card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
 
 .layout--2 .card:not(:nth-child(2n)) {
   margin-right: 80px;
 }
+@media screen and (max-width: 959px) {
+  .layout--2 .card:not(:nth-child(2n)) {
+    margin: 0 0 40px 0;
+  }
+}
 
 .layout--2 .card:nth-child(n+3) {
   margin-top: 80px;
+}
+@media screen and (max-width: 959px) {
+  .layout--2 .card:nth-child(n+3) {
+    margin: 0 0 40px 0;
+  }
 }
 
 /*３枚レイアウト*/
@@ -918,13 +980,29 @@ a {
   width: calc((100% - 160px) / 3);
   margin: 0;
 }
+@media screen and (max-width: 959px) {
+  .layout--3 .card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
 
 .layout--3 .card:not(:nth-child(3n)) {
   margin-right: 80px;
 }
+@media screen and (max-width: 959px) {
+  .layout--3 .card:not(:nth-child(3n)) {
+    margin: 0 0 40px 0;
+  }
+}
 
 .layout--3 .card:nth-child(n+4) {
   margin-top: 80px;
+}
+@media screen and (max-width: 959px) {
+  .layout--3 .card:nth-child(n+4) {
+    margin: 0 0 40px 0;
+  }
 }
 
 /*４枚レイアウト*/
@@ -932,9 +1010,19 @@ a {
   width: calc((100% - 240px) / 4);
   margin: 0;
 }
+@media screen and (max-width: 959px) {
+  .layout--4 .card {
+    width: 100%;
+  }
+}
 
 .layout--4 .card:not(:nth-child(4n)) {
   margin-right: 80px;
+}
+@media screen and (max-width: 959px) {
+  .layout--4 .card:not(:nth-child(4n)) {
+    margin: 0 0 40px 0;
+  }
 }
 
 /*.layout--4 .card{
@@ -943,10 +1031,15 @@ a {
 .layout--4 .card:nth-child(n+5) {
   margin-top: 80px;
 }
+@media screen and (max-width: 959px) {
+  .layout--4 .card:nth-child(n+5) {
+    margin: 0 0 40px 0;
+  }
+}
 
 @media screen and (max-width: 959px) {
-  .card__imageBox {
-    max-height: 160px;
+  .card__box {
+    margin-bottom: 40px;
   }
 }
 
@@ -1205,6 +1298,11 @@ a {
 .team__section {
   margin-top: 200px;
 }
+@media screen and (max-width: 959px) {
+  .team__section {
+    margin-top: 300px;
+  }
+}
 .team__container {
   position: relative;
 }
@@ -1215,11 +1313,22 @@ a {
   display: inline-block;
   top: 108px;
   right: 0;
-  width: 200px; /*画像の幅*/
-  height: 1085px; /*画像の高さ*/
+  width: 200px;
+  height: 1085px;
   background-image: url(../../img/teams_bg_01.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media screen and (max-width: 959px) {
+  .team__container::before {
+    top: -54px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .team__container::before {
+    width: 50px;
+  }
 }
 .team__container::after {
   content: "";
@@ -1234,11 +1343,29 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media screen and (max-width: 959px) {
+  .team__container::after {
+    top: 1800px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .team__container::after {
+    width: 55px;
+  }
+}
 .team__wrapper {
   width: calc(100% - 144px);
   margin: 0 auto;
   max-width: 1296px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 959px) {
+  .team__wrapper {
+    width: calc(100% - 48px);
+    max-width: 700px;
+    margin-bottom: 100px;
+  }
 }
 .team__titleBox {
   margin-bottom: 120px;
@@ -1250,10 +1377,25 @@ a {
   font-family: "M PLUS 1p", sans-serif;
   color: #E2F4FC;
 }
+@media screen and (max-width: 959px) {
+  .team__titleBox::before {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .team__titleBox {
+    margin-bottom: 80px;
+  }
+}
 .team__title {
   display: flex;
   align-items: center;
   margin-bottom: 48px;
+}
+@media screen and (max-width: 959px) {
+  .team__title {
+    font-size: 20px;
+  }
 }
 .team__title::after {
   content: "";
@@ -1261,21 +1403,43 @@ a {
   width: 160px;
   margin-left: 36px;
 }
+@media screen and (max-width: 959px) {
+  .team__title::after {
+    width: 30px;
+    margin-left: 8px;
+  }
+}
 .team__text {
   max-width: 823px;
   width: 100%;
   line-height: 3;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 959px) {
+  .team__text {
+    max-width: 700px;
+  }
+}
 .team__group {
   width: calc(100% - 200px);
   max-width: 1296px;
   margin: 0 auto;
 }
+@media screen and (max-width: 959px) {
+  .team__group {
+    width: calc(100% - 48px);
+    max-width: 700px;
+  }
+}
 .team__listTitle {
   font-size: 42px;
   font-weight: bold;
   margin-bottom: 42px;
+}
+@media screen and (max-width: 959px) {
+  .team__listTitle {
+    font-size: 20px;
+  }
 }
 .team__list {
   max-width: 440px;
@@ -1289,14 +1453,25 @@ a {
   position: relative;
   margin-bottom: 176px;
 }
+@media screen and (max-width: 959px) {
+  .team__box {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
 .team__imgBox {
   width: 100%;
+}
+@media screen and (max-width: 959px) {
+  .team__imgBox {
+    width: 80%;
+  }
 }
 .team__img {
   width: 100%;
 }
 
-.closing__warrper {
+.closing__wrapper {
   margin-top: 200px;
 }
 .closing__container {
@@ -1304,13 +1479,33 @@ a {
   margin: 0 auto;
   margin-bottom: 505px;
 }
+@media screen and (max-width: 959px) {
+  .closing__container {
+    width: calc(100% - 48px);
+    margin-bottom: 120px;
+  }
+}
 .closing__box {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 96px;
+}
+@media screen and (max-width: 959px) {
+  .closing__box {
+    max-width: 580px;
+    margin-bottom: 24px;
+  }
 }
 .closing__title {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 959px) {
+  .closing__title {
+    font-size: 24px;
+  }
 }
 .closing__title::after {
   content: "";
@@ -1319,32 +1514,40 @@ a {
   margin-left: 36px;
 }
 .closing__area {
-  width: 100%;
+  width: calc(100% - 200px);
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .closing__area {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+  }
 }
 .closing__imageBox {
   width: 254px;
 }
+.closing__img {
+  width: 100%;
+}
 .closing__text {
-  position: relative;
-  max-width: 610px;
+  max-width: 850px;
+  width: 100%;
   font-size: 18px;
   letter-spacing: 0.2em;
   line-height: 2.25;
-  width: calc(100% - 254px);
   margin: 0 auto;
+  margin-left: 24px;
 }
-.closing__text::before {
-  content: "";
-  position: absolute;
-  background-image: url(../../svg/last_01.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 300;
-  display: inline-block;
-  top: 32px;
-  left: -281px;
-  width: 254px; /*画像の幅*/
-  height: 205px; /*画像の高さ*/
+@media screen and (max-width: 959px) {
+  .closing__text {
+    margin: 0 0 24px;
+  }
 }
 .closing__subText_1 {
   margin-bottom: 32px;
