@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@use "../foundation/mixin" as *;
 
 .s-reasonVisual {
   position: relative;
@@ -20,6 +21,9 @@
   .l-S02 {
     background-color: var(--bg);
     padding: 0 72px;
+    @include mq(tab) {
+      padding: 0 24px;
+    }
   }
   .l-S03 {
     width: calc(100% - 200px);
@@ -29,6 +33,9 @@
   .b-bg__imgBox {
     position: absolute;
     width: 200px;
+    @include mq(tab) {
+      width: 116px;
+    }
     img {
       width: 100%;
     }
@@ -36,6 +43,9 @@
   .bg_01_right {
     top: 800px;
     right: 0;
+    @include mq(tab) {
+      top: 740px;
+    }
   }
   .bg_02_left {
     top: 1800px;
@@ -53,6 +63,9 @@
 // コンテンツ
 .s-reasonVisual .l-L01 {
   margin-bottom: 50px;
+  @include mq(tab) {
+    margin-bottom: 16px;
+  }
 }
 .s-reasonVisual .l-L01::before {
   content: "REASON";
@@ -60,32 +73,50 @@
   font-weight: bold;
   font-family: 'M PLUS 1p', sans-serif;
   color: #E2F4FC;
+  @include mq(tab) {
+    font-size: 50px;
+  }
 }
 .s-reasonVisual .head_3 {
   font-size: 50px;
   letter-spacing: 0.15em;
   display: flex;
   align-items: center;
+  @include mq(tab) {
+    font-size: 20px;
+  }
   &::after {
     border-bottom: 2px solid var(--accent);
     content: "";
     width: 160px;
     height: 30px;
     margin-left: 36px;
+    @include mq(tab) {
+      height: 13px;
+    }
   }
   .large_number {
     font-size: 73px;
+    @include mq(tab) {
+      font-size: 30px;
+    }
   }
 }
 .s-reasonVisual .s-reasonVisual__list {
   font-size: 24px;
   margin-bottom: 200px;
+  @include mq(tab) {
+    margin-bottom: 120px;
+  }
   .b-list {
     &__title {
       display: flex;
       align-items: center;
       padding: 24px 0;
       border-bottom: 1px solid #C6E3F3;
+      @include mq(tab) {
+        padding: 16px 0;
+      }
     }
   }
   .b-subText {
@@ -94,6 +125,9 @@
     font-size: 60px;
     color: #C4E5F9;
     padding-right: 32px;
+    @include mq(tab) {
+      font-size: 40px;
+    }
   }
 }
 .s-reasonVisual .b-reasonCard {
@@ -101,15 +135,24 @@
   z-index: 100;
   &:not(:last-child) {
     margin-bottom: 272px;
+    @include mq (tab) {
+      margin-bottom: 120px;
+    }
   }
   &__wrapper {
     display: flex;
+    @include mq(tab) {
+      display: block;
+    }
   }
   .b-cardContents {
     &__title {
       position: relative;
       font-size: 42px;
       font-weight: bold;
+      @include mq(tab) {
+        font-size: 18px;
+      }
         &::before {
           content: '01';    
           position: absolute;   
@@ -127,10 +170,17 @@
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 62px;
+      @include mq(tab) {
+        font-size: 13px;
+        margin-bottom: 24px;
+      }
     }
     &__subText {
       font-size: 16px;
       line-height: 2;
+      @include mq(tab) {
+        font-size: 12px;
+      }
     }
   }
 }

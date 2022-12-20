@@ -1105,6 +1105,11 @@ a {
   background-color: var(--bg);
   padding: 0 72px;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .l-S02 {
+    padding: 0 24px;
+  }
+}
 .s-reasonVisual .l-S03 {
   width: calc(100% - 200px);
   max-width: 1296px;
@@ -1114,12 +1119,22 @@ a {
   position: absolute;
   width: 200px;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-bg__imgBox {
+    width: 116px;
+  }
+}
 .s-reasonVisual .b-bg__imgBox img {
   width: 100%;
 }
 .s-reasonVisual .bg_01_right {
   top: 800px;
   right: 0;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .bg_01_right {
+    top: 740px;
+  }
 }
 .s-reasonVisual .bg_02_left {
   top: 1800px;
@@ -1137,6 +1152,11 @@ a {
 .s-reasonVisual .l-L01 {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .l-L01 {
+    margin-bottom: 16px;
+  }
+}
 
 .s-reasonVisual .l-L01::before {
   content: "REASON";
@@ -1145,12 +1165,22 @@ a {
   font-family: "M PLUS 1p", sans-serif;
   color: #E2F4FC;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .l-L01::before {
+    font-size: 50px;
+  }
+}
 
 .s-reasonVisual .head_3 {
   font-size: 50px;
   letter-spacing: 0.15em;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .head_3 {
+    font-size: 20px;
+  }
 }
 .s-reasonVisual .head_3::after {
   border-bottom: 2px solid var(--accent);
@@ -1159,13 +1189,28 @@ a {
   height: 30px;
   margin-left: 36px;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .head_3::after {
+    height: 13px;
+  }
+}
 .s-reasonVisual .head_3 .large_number {
   font-size: 73px;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .head_3 .large_number {
+    font-size: 30px;
+  }
 }
 
 .s-reasonVisual .s-reasonVisual__list {
   font-size: 24px;
   margin-bottom: 200px;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .s-reasonVisual__list {
+    margin-bottom: 120px;
+  }
 }
 .s-reasonVisual .s-reasonVisual__list .b-list__title {
   display: flex;
@@ -1173,12 +1218,22 @@ a {
   padding: 24px 0;
   border-bottom: 1px solid #C6E3F3;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .s-reasonVisual__list .b-list__title {
+    padding: 16px 0;
+  }
+}
 .s-reasonVisual .s-reasonVisual__list .b-subText {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 60px;
   color: #C4E5F9;
   padding-right: 32px;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .s-reasonVisual__list .b-subText {
+    font-size: 40px;
+  }
 }
 
 .s-reasonVisual .b-reasonCard {
@@ -1188,13 +1243,28 @@ a {
 .s-reasonVisual .b-reasonCard:not(:last-child) {
   margin-bottom: 272px;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-reasonCard:not(:last-child) {
+    margin-bottom: 120px;
+  }
+}
 .s-reasonVisual .b-reasonCard__wrapper {
   display: flex;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-reasonCard__wrapper {
+    display: block;
+  }
 }
 .s-reasonVisual .b-reasonCard .b-cardContents__title {
   position: relative;
   font-size: 42px;
   font-weight: bold;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-reasonCard .b-cardContents__title {
+    font-size: 18px;
+  }
 }
 .s-reasonVisual .b-reasonCard .b-cardContents__title::before {
   content: "01";
@@ -1213,9 +1283,20 @@ a {
   font-weight: bold;
   margin-bottom: 62px;
 }
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-reasonCard .b-cardContents__subTitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+}
 .s-reasonVisual .b-reasonCard .b-cardContents__subText {
   font-size: 16px;
   line-height: 2;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-reasonCard .b-cardContents__subText {
+    font-size: 12px;
+  }
 }
 
 .s-reasonVisual .b-reasonCard.card_02 .b-reasonCard__wrapper {
