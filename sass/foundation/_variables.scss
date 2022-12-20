@@ -62,3 +62,9 @@ a{
 .subTitle {
   font-size: 24px;
 }
+
+// タイトルアニメーション
+.fadein_text,
+.fadein_text span {
+  opacity: 0;
+}

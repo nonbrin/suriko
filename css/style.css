@@ -713,6 +713,11 @@ a {
   font-size: 24px;
 }
 
+.fadein_text,
+.fadein_text span {
+  opacity: 0;
+}
+
 .footer__text {
   position: relative;
   text-align: center;
