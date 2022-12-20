@@ -1,5 +1,4 @@
 @charset "UTF-8";
-// @use "__mixin" as m;
 @use '../foundation/mixin';
 
 .s-mainVisual {
@@ -9,18 +8,16 @@
       max-width: 1296px;
       margin: 0 auto;
   }
-}
-.s-mainVisual::before {
-  content: '';
-  padding-top: 54%;
-  display: block;
+  &::before {
+    content: '';
+    padding-top: 54%;
+    display: block;
+  }
 }
 .s-mainVisual {
   .b-head_2 {
     position: absolute;
     top: 88px;
-    width: calc(100% - 72px * 2);
-    max-width: 1296px;
     font-size: 74px;
     line-height: 1.6;
     letter-spacing: 0em;
@@ -57,3 +54,38 @@
   }
 }
 
+@include mixin.mq(tab){
+  .s-mainVisual {
+    .l-S02 {
+      width: calc(100% - 24px * 2);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    &::before {
+      content: none;
+    }
+    .b-head_2 {
+      position: static;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 80px;
+      .b-head_sub {
+        font-size: 24px;
+      }
+    }
+    .b-bg__imgBox {
+      position: absolute;
+      top: -56px;
+      right: 0;
+      z-index: -100;
+      width: 100vw;
+    }
+    .b-main__imgBox {
+      position: static;
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto 80px;
+    }
+  }
+}

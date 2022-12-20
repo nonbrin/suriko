@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@use '../foundation/mixin';
 
 .header  {
 height: 72px;
@@ -11,9 +11,22 @@ height: 72px;
     display: flex;
     align-items: center;
   }
+  .b-head_1 {
+    font-size: 40px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+  }
 }
-.header .b-head_1 {
-  font-size: 40px;
-  line-height: 27px;
-  letter-spacing: 0.04em;
+
+@include mixin.mq(tab){
+  .header {
+    height: 56px;
+    &__wrapper {
+      width: 100%;
+      padding: 0 24px;
+    }
+    .b-head_1 {
+      font-size: 16px;
+    }
+  }
 }

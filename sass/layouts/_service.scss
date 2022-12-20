@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@use '../foundation/mixin';
 
 // レイアウト
 .s-serviceVisual {
@@ -21,7 +22,7 @@
     justify-content: space-between;
   }
 }
-// 青色背景
+// 青背景・イラスト
 .s-serviceVisual {
   .b-main__imgBox,
   .b-bg__imgBox {
@@ -32,7 +33,7 @@
   }
   .main_01_img {
     top: 160px;
-    left: 200px;
+    left: 100px;
     width: 400px;
     z-index: -50;
   }
@@ -99,5 +100,89 @@
   }
 }
 
-
+@include mixin.mq(tab){
+  // レイアウト
+  .s-serviceVisual {
+    .l-S02 {
+      width: calc(100% - 24px * 2);
+      max-width: 700px;
+    }  
+    .l-L01 {
+      width: 65%;
+      margin-left: auto;
+      margin-bottom: 80px;
+    }
+    .l-L03 {
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+  }
+  // 青背景・イラスト
+  .s-serviceVisual {
+    .bg_01_left {
+      width: 138px;
+      top: -240px;
+    }
+    .main_01_img {
+      left: 5%;
+      top: 3%;
+      width: 24%;
+    }  
+  }
+  // コンテンツ
+  .s-serviceVisual {
+    .l-L01::before {
+      font-size: 50px;
+    }
+    .b-Main {
+      &__title {
+        font-size: 20px;
+        margin-bottom: 24px;
+        &::after {
+          border-bottom: 2px solid var(--accent);
+          content: "";
+          width: 30px;
+          margin-left: 36px;
+        }
+      }
+      &__subText {
+        font-size: 12px;
+        line-height: 2.25;
+        letter-spacing: 0.15em;
+      }
+    }
+    .b-card__wrapper {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 56px;
+      }
+      .b-serviceCard {
+        padding: 24px;
+        .head_3 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 16px;
+        }
+        .subText {
+          font-size: 12px;
+          line-height: 2.25;
+        }
+      }
+      .b-card__imgBox {
+        width: 30%;
+        min-width: 150px;
+        margin-top: -7%;
+      }
+    }
+  }
+}
+@include mixin.mq(tab){
+  // 青背景・イラスト
+  .s-serviceVisual {
+    .main_01_img {
+      top: 7%;
+    }  
+  }
+}
 
