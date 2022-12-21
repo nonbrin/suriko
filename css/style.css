@@ -1393,7 +1393,7 @@ a {
   position: relative;
   z-index: 1000;
   font-size: 24px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 959px) {
   .s-reasonVisual .s-reasonVisual__list {
@@ -1412,7 +1412,12 @@ a {
     padding: 16px 0;
   }
 }
-.s-reasonVisual .s-reasonVisual__list .b-list__title::before {
+.s-reasonVisual .s-reasonVisual__list .b-list__title .reason_link {
+  display: inline-flex;
+  align-items: center;
+  width: 90%;
+}
+.s-reasonVisual .s-reasonVisual__list .b-list__title .reason_link::before {
   content: "";
   position: absolute;
   width: 18px;
@@ -1423,14 +1428,10 @@ a {
   right: 0;
 }
 @media screen and (max-width: 959px) {
-  .s-reasonVisual .s-reasonVisual__list .b-list__title::before {
+  .s-reasonVisual .s-reasonVisual__list .b-list__title .reason_link::before {
     width: 8px;
     height: 8px;
   }
-}
-.s-reasonVisual .s-reasonVisual__list .b-list__title .reason_link {
-  display: inline-block;
-  width: 90%;
 }
 .s-reasonVisual .s-reasonVisual__list .b-subText {
   font-family: "Roboto", sans-serif;
@@ -1444,13 +1445,18 @@ a {
     font-size: 40px;
   }
 }
+.s-reasonVisual .s-reasonVisual__list .b-subText_01:hover {
+  color: var(--accent);
+  transition: all 0.3s;
+}
 
 .s-reasonVisual .b-reasonCard {
   position: relative;
   z-index: 100;
+  padding-top: 100px;
 }
 .s-reasonVisual .b-reasonCard:not(:last-child) {
-  margin-bottom: 272px;
+  margin-bottom: 232px;
 }
 @media screen and (max-width: 959px) {
   .s-reasonVisual .b-reasonCard:not(:last-child) {
