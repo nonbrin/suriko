@@ -1288,6 +1288,26 @@ a {
     padding: 16px 0;
   }
 }
+.s-reasonVisual .s-reasonVisual__list .b-list__title::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid;
+  border-color: transparent transparent #333 #333;
+  transform: rotate(-45deg);
+  right: 0;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .s-reasonVisual__list .b-list__title::before {
+    width: 8px;
+    height: 8px;
+  }
+}
+.s-reasonVisual .s-reasonVisual__list .b-list__title .reason_link {
+  display: inline-block;
+  width: 90%;
+}
 .s-reasonVisual .s-reasonVisual__list .b-subText {
   font-family: "Roboto", sans-serif;
   font-weight: bold;

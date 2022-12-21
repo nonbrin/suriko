@@ -146,6 +146,24 @@
       @include mq(tab) {
         padding: 16px 0;
       }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border: 1px solid;
+        border-color:  transparent transparent #333 #333;
+        transform: rotate(-45deg);
+        right: 0;
+        @include mq(tab) {
+          width: 8px;
+          height: 8px;
+          }  
+      }
+      .reason_link{
+        display: inline-block;
+        width: 90%;
+      }
     }
   }
   .b-subText {
