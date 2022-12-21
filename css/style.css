@@ -1268,6 +1268,8 @@ a {
 }
 
 .s-reasonVisual .s-reasonVisual__list {
+  position: relative;
+  z-index: 1000;
   font-size: 24px;
   margin-bottom: 200px;
 }
