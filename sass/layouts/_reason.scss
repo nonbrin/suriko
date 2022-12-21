@@ -134,7 +134,7 @@
   position: relative;
   z-index: 1000;
   font-size: 24px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   @include mq(tab) {
     margin-bottom: 120px;
     font-size: 16px;
@@ -148,23 +148,38 @@
       @include mq(tab) {
         padding: 16px 0;
       }
-      &::before {
-        content: '';
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        border: 1px solid;
-        border-color:  transparent transparent #333 #333;
-        transform: rotate(-45deg);
-        right: 0;
-        @include mq(tab) {
-          width: 8px;
-          height: 8px;
-          }  
-      }
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   width: 18px;
+      //   height: 18px;
+      //   border: 1px solid;
+      //   border-color:  transparent transparent #333 #333;
+      //   transform: rotate(-45deg);
+      //   right: 0;
+      //   @include mq(tab) {
+      //     width: 8px;
+      //     height: 8px;
+      //   }
+      // }
       .reason_link{
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
         width: 90%;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          border: 1px solid;
+          border-color:  transparent transparent #333 #333;
+          transform: rotate(-45deg);
+          right: 0;
+          @include mq(tab) {
+            width: 8px;
+            height: 8px;
+          }
+        }
       }
     }
   }
@@ -178,12 +193,17 @@
       font-size: 40px;
     }
   }
+  .b-subText_01:hover{
+    color: var(--accent);
+    transition: all 0.3s;
+  }
 }
 .s-reasonVisual .b-reasonCard {
   position: relative;
   z-index: 100;
+  padding-top: 100px;
   &:not(:last-child) {
-    margin-bottom: 272px;
+    margin-bottom: 232px;
     @include mq (tab) {
       margin-bottom: 120px;
     }
