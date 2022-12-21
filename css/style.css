@@ -1200,18 +1200,11 @@ a {
   }
 }
 
-.s-reasonVisual .head_3 {
-  font-size: 50px;
-  letter-spacing: 0.15em;
+.s-reasonVisual .title__Box {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 959px) {
-  .s-reasonVisual .head_3 {
-    font-size: 20px;
-  }
-}
-.s-reasonVisual .head_3::after {
+.s-reasonVisual .title__Box::after {
   border-bottom: 2px solid var(--accent);
   content: "";
   width: 160px;
@@ -1219,20 +1212,29 @@ a {
   margin-left: 36px;
 }
 @media screen and (max-width: 959px) {
-  .s-reasonVisual .head_3::after {
+  .s-reasonVisual .title__Box::after {
     height: 13px;
   }
 }
 @media screen and (max-width: 540px) {
-  .s-reasonVisual .head_3::after {
+  .s-reasonVisual .title__Box::after {
     width: 30px;
   }
 }
-.s-reasonVisual .head_3 .large_number {
+.s-reasonVisual .head_3 {
+  font-size: 50px;
+  letter-spacing: 0.15em;
+}
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .head_3 {
+    font-size: 20px;
+  }
+}
+.s-reasonVisual .large_number {
   font-size: 73px;
 }
 @media screen and (max-width: 959px) {
-  .s-reasonVisual .head_3 .large_number {
+  .s-reasonVisual .large_number {
     font-size: 30px;
   }
 }

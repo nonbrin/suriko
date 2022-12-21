@@ -8,7 +8,6 @@
 .s-reasonVisual .grey_top,
 .s-reasonVisual .grey_bottom {
   width: 100%;
-  // background-color: orange;
 }
 .s-reasonVisual .grey_top .grey_top_img,
 .s-reasonVisual .grey_bottom .grey_bottom_img {
@@ -78,13 +77,14 @@
     }
   }
 }
-// コンテンツ
+// レイアウト
 .s-reasonVisual .l-L01 {
   margin-bottom: 50px;
   @include mq(tab) {
     margin-bottom: 16px;
   }
 }
+// タイトルあしらい
 .s-reasonVisual .l-L01::before {
   content: "REASON";
   font-size: 128px;
@@ -95,25 +95,30 @@
     font-size: 50px;
   }
 }
-.s-reasonVisual .head_3 {
-  font-size: 50px;
-  letter-spacing: 0.15em;
-  display: flex;
-  align-items: center;
-  @include mq(tab) {
-    font-size: 20px;
-  }
-  &::after {
-    border-bottom: 2px solid var(--accent);
-    content: "";
-    width: 160px;
-    height: 30px;
-    margin-left: 36px;
-    @include mq(tab) {
-      height: 13px;
+// コンテンツ
+.s-reasonVisual {
+  .title__Box {
+    display: flex;
+    align-items: center;
+    &::after {
+      border-bottom: 2px solid var(--accent);
+      content: "";
+      width: 160px;
+      height: 30px;
+      margin-left: 36px;
+      @include mq(tab) {
+        height: 13px;
+      }
+      @include mq(sp) {
+        width: 30px;
+      }
     }
-    @include mq(sp) {
-      width: 30px;
+  }
+  .head_3 {
+    font-size: 50px;
+    letter-spacing: 0.15em;
+    @include mq(tab) {
+      font-size: 20px;
     }
   }
   .large_number {
