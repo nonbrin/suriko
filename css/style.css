@@ -1340,6 +1340,15 @@ a {
   }
 }
 
+@media screen and (max-width: 959px) {
+  .s-reasonVisual .b-card__imgBox {
+    text-align: end;
+  }
+  .s-reasonVisual .b-card__imgBox img {
+    width: 127px;
+  }
+}
+
 .s-reasonVisual .b-reasonCard.card_02 .b-reasonCard__wrapper {
   flex-direction: row-reverse;
 }
@@ -1360,15 +1369,6 @@ a {
 
 .s-reasonVisual .b-reasonCard.card_05 .b-cardContents__title::before {
   content: "05";
-}
-
-@media screen and (max-width: 959px) {
-  .b-card__imgBox {
-    text-align: end;
-  }
-}
-.b-card__imgBox img {
-  width: 127px;
 }
 
 .s-serviceVisual {

@@ -210,6 +210,16 @@
     }
   }
 }
+
+.s-reasonVisual .b-card__imgBox {
+  @include mq(tab) {
+    text-align: end;
+    img {
+      width: 127px;
+    }
+  }
+}
+
 .s-reasonVisual .b-reasonCard.card_02 {
   .b-reasonCard__wrapper {
     flex-direction: row-reverse;
@@ -237,14 +247,7 @@
   }
 }
 
-.b-card__imgBox {
-  @include mq(tab) {
-    text-align: end;
-  }
-  img {
-    width: 127px;
-  }
-}
+
 
 
 
