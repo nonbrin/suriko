@@ -1213,7 +1213,9 @@ a {
 }
 @media screen and (max-width: 959px) {
   .s-reasonVisual .title__Box::after {
+    width: 30px;
     height: 13px;
+    margin-left: 8;
   }
 }
 @media screen and (max-width: 540px) {
@@ -1501,10 +1503,8 @@ a {
     margin-bottom: 24px;
   }
   .s-serviceVisual .b-Main__title::after {
-    border-bottom: 2px solid var(--accent);
-    content: "";
     width: 30px;
-    margin-left: 36px;
+    margin-left: 8px;
   }
   .s-serviceVisual .b-Main__subText {
     font-size: 12px;
