@@ -861,13 +861,19 @@ a {
     transform: translateY(0);
   }
 }
-.footer__text {
+.footer__box {
   position: relative;
+}
+.footer__text {
   text-align: center;
   color: var(--main);
 }
 .footer__text small {
   font-size: 20px;
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+  left: 0;
 }
 @media screen and (max-width: 959px) {
   .footer__text small {

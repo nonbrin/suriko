@@ -2,13 +2,19 @@
 @use "../foundation/mixin" as *;
 
 .footer {
-  &__text{
+  &__box{
     position: relative;
+  }
+  &__text{
     text-align: center;
     color: var( --main );
   }
   &__text small{
     font-size: 20px;
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+    left: 0;
     @include mq(tab){
       font-size: 12px;
     }
