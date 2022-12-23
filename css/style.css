@@ -1056,7 +1056,6 @@ a {
 .products__title {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .products__title::after {
   border-bottom: 2px solid var(--accent);

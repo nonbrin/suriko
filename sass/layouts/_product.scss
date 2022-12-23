@@ -47,7 +47,7 @@
   &__title{
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     &::after {
       border-bottom: 2px solid var(--accent);
       content: "";
